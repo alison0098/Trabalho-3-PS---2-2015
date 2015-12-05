@@ -50,7 +50,7 @@ FilaLocal* FilaLocal_Pop(FilaLocal* fp){
 	aux = fp->first;
 
 	while(aux != NULL){
-		//free(Local_Get_Disp(NodeLocal_Get(aux)));
+		free(Local_Get_Disp(NodeLocal_Get(aux)));
 		temp = NodeLocal_Get_Prox(aux);
 		free(aux);
 		aux = temp;

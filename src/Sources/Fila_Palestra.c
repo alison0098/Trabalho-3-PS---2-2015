@@ -55,7 +55,7 @@ FilaPalestra* FilaPalestra_Pop(FilaPalestra* fp){
 
 	while(aux != NULL){
 		temp = NodePalestra_Get_Prox(aux);
-		
+		free(NodePalestra_Get(aux));
 		free(aux);
 		aux = temp;
 	}

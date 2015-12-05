@@ -41,18 +41,19 @@ FilaPalestrante* FilaPalestrante_Pop(FilaPalestrante* fp){
 	NodePalestrante* aux, *temp;
 
 	if(fp == NULL)
-		return (FilaPalestrante*)NULL;
+		return NULL;
 
 	if(FilaPalestrante_Is_Empty(fp)){
 		free(fp);
-		return (FilaPalestrante*)NULL;
+		return NULL;
 	}
 
 	aux = fp->first;
 
 	while(aux != NULL){
-		//free(Palestrante_Get_Disp(NodePalestrante_Get(aux)));
+		free(Palestrante_Get_Disp(NodePalestrante_Get(aux)));
 		temp = NodePalestrante_Get_Prox(aux);
+		free(NodePalestrante_Get(aux));
 		free(aux);
 		aux = temp;
 	}
