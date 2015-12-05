@@ -1,0 +1,6 @@
+Executar makefile na pasta src para compilar.
+Compilado em Ubuntu 14.4 32-bits
+Compilado em Windows 10 Pro.
+Para executar o programa deve-se ter os arquivos de palestra, palestrante, local,
+na mesma pasta do programa.
+Como exemplo, executar o programa na pasta bin com o comando ./prog.
