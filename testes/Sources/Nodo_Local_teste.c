@@ -7,7 +7,7 @@
 #include "CUnit/CUnit.h"
 #include "CUnit/Basic.h"
 
-void adicionar_testes_smo_datas(void);
+void adicionar_testes_Nodo_Local(void);
 
 /*Abaixo esta a funçao que efetua os testes para a função NodeLocal_Vector_New*/
 void teste_DT_NodeLocal_Vector_New_NULL(void);
@@ -40,11 +40,11 @@ void teste_DT_NodeLocal_Vector_Get_Size_0(void){
     CU_ASSERT_TRUE(!nv);
 }
 
-void  adicionar_testes_smo_datas(void){
+void  adicionar_testes_Nodo_Local(void){
 	CU_pSuite suite;
 
 	/*Cria uma suite que conterá todos os testes*/
-	suite = CU_add_suite("Testes da smo_datas Nodo_Local.c",NULL,NULL);
+	suite = CU_add_suite("Testes do Nodo_Local.c",NULL,NULL);
 
 
 	/*Adiciona os testes para a função DT_data_valida*/
@@ -59,7 +59,7 @@ int main(void){
     	return CU_get_error();
 
     /*Adiciona os testes ao registro*/
-   	adicionar_testes_smo_datas();
+   	adicionar_testes_Nodo_Local();
 	/*Muda o modo do CUnit para o modo VERBOSE
 	 O modo VERBOSE mostra algumas informacoes a
 	 mais na hora da execucao*/
