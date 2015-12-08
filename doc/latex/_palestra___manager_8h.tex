@@ -1,0 +1,77 @@
+\hypertarget{_palestra___manager_8h}{}\section{Referência do Arquivo Palestra\+\_\+\+Manager.\+h}
+\label{_palestra___manager_8h}\index{Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}}
+{\ttfamily \#include \char`\"{}Fila\+\_\+\+Palestra.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_palestra___manager_8h_a74b9da98449a8426bb541bde2c4bc824}{Palestra\+Manager\+\_\+\+Read} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Le o arquivo e adiciona nodos a fila. \end{DoxyCompactList}\item 
+int \hyperlink{_palestra___manager_8h_a68fe1aa6a7f1ad3474c668a2af435f0a}{Palestra\+Manager\+\_\+\+Pop\+Fila} ()
+\begin{DoxyCompactList}\small\item\em Destroi a fila de palestras. \end{DoxyCompactList}\item 
+void \hyperlink{_palestra___manager_8h_a6cc281a80b0f5980cc22e11f37dd4d54}{Palestra\+Manager\+\_\+\+Print} ()
+\begin{DoxyCompactList}\small\item\em Imprime a fila. \end{DoxyCompactList}\item 
+\hyperlink{_fila___palestra_8h_ae17ec8778748cb6a60a61c49f87f09fe}{Fila\+Palestra} $\ast$ \hyperlink{_palestra___manager_8h_ad7e451f88ff6d3c8376bb9dbb12a0faf}{Palestra\+Manager\+\_\+\+Get} ()
+\end{DoxyCompactItemize}
+\subsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_fila___palestra_8h_ae17ec8778748cb6a60a61c49f87f09fe}{Fila\+Palestra} $\ast$ \hyperlink{_palestra___manager_8h_ad58eecd67ca270d5adde53e02e3f4d86}{fila\+Palestra}
+\end{DoxyCompactItemize}
+
+
+\subsection{Funções}
+\hypertarget{_palestra___manager_8h_ad7e451f88ff6d3c8376bb9dbb12a0faf}{}\index{Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}!Palestra\+Manager\+\_\+\+Get@{Palestra\+Manager\+\_\+\+Get}}
+\index{Palestra\+Manager\+\_\+\+Get@{Palestra\+Manager\+\_\+\+Get}!Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}}
+\subsubsection[{Palestra\+Manager\+\_\+\+Get()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fila\+Palestra}$\ast$ Palestra\+Manager\+\_\+\+Get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_palestra___manager_8h_ad7e451f88ff6d3c8376bb9dbb12a0faf}
+\hypertarget{_palestra___manager_8h_a68fe1aa6a7f1ad3474c668a2af435f0a}{}\index{Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}!Palestra\+Manager\+\_\+\+Pop\+Fila@{Palestra\+Manager\+\_\+\+Pop\+Fila}}
+\index{Palestra\+Manager\+\_\+\+Pop\+Fila@{Palestra\+Manager\+\_\+\+Pop\+Fila}!Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}}
+\subsubsection[{Palestra\+Manager\+\_\+\+Pop\+Fila()}]{\setlength{\rightskip}{0pt plus 5cm}int Palestra\+Manager\+\_\+\+Pop\+Fila (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_palestra___manager_8h_a68fe1aa6a7f1ad3474c668a2af435f0a}
+
+
+Destroi a fila de palestras. 
+
+\begin{DoxyReturn}{Retorna}
+retorna 1 se bem sucedido. 
+\end{DoxyReturn}
+\hypertarget{_palestra___manager_8h_a6cc281a80b0f5980cc22e11f37dd4d54}{}\index{Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}!Palestra\+Manager\+\_\+\+Print@{Palestra\+Manager\+\_\+\+Print}}
+\index{Palestra\+Manager\+\_\+\+Print@{Palestra\+Manager\+\_\+\+Print}!Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}}
+\subsubsection[{Palestra\+Manager\+\_\+\+Print()}]{\setlength{\rightskip}{0pt plus 5cm}void Palestra\+Manager\+\_\+\+Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_palestra___manager_8h_a6cc281a80b0f5980cc22e11f37dd4d54}
+
+
+Imprime a fila. 
+
+\hypertarget{_palestra___manager_8h_a74b9da98449a8426bb541bde2c4bc824}{}\index{Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}!Palestra\+Manager\+\_\+\+Read@{Palestra\+Manager\+\_\+\+Read}}
+\index{Palestra\+Manager\+\_\+\+Read@{Palestra\+Manager\+\_\+\+Read}!Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}}
+\subsubsection[{Palestra\+Manager\+\_\+\+Read(char $\ast$filename)}]{\setlength{\rightskip}{0pt plus 5cm}void Palestra\+Manager\+\_\+\+Read (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\label{_palestra___manager_8h_a74b9da98449a8426bb541bde2c4bc824}
+
+
+Le o arquivo e adiciona nodos a fila. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em filename} & nome do arquivo a ser lido. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variáveis}
+\hypertarget{_palestra___manager_8h_ad58eecd67ca270d5adde53e02e3f4d86}{}\index{Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}!fila\+Palestra@{fila\+Palestra}}
+\index{fila\+Palestra@{fila\+Palestra}!Palestra\+\_\+\+Manager.\+h@{Palestra\+\_\+\+Manager.\+h}}
+\subsubsection[{fila\+Palestra}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fila\+Palestra}$\ast$ fila\+Palestra\hspace{0.3cm}{\ttfamily [static]}}\label{_palestra___manager_8h_ad58eecd67ca270d5adde53e02e3f4d86}

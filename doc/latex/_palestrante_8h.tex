@@ -1,0 +1,91 @@
+\hypertarget{_palestrante_8h}{}\section{Referência do Arquivo Palestrante.\+h}
+\label{_palestrante_8h}\index{Palestrante.\+h@{Palestrante.\+h}}
+{\ttfamily \#include \char`\"{}Disponibilidade.\+h\char`\"{}}\\*
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante} \hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_palestrante_8h_af5b8ce6e423e768a3b563bf8a8e72df9}{Palestrante\+\_\+\+Get\+\_\+\+Nome} (\hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Retorna o nome. \end{DoxyCompactList}\item 
+\hyperlink{_disponibilidade_8h_af92f013b1928213088c2cd8ca3864596}{Disponibilidade} $\ast$$\ast$ \hyperlink{_palestrante_8h_ae244836fbf51a977039f91736571648e}{Palestrante\+\_\+\+Get\+\_\+\+Disp} (\hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Retorna o vetor de disponibilidades. \end{DoxyCompactList}\item 
+\hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante} $\ast$ \hyperlink{_palestrante_8h_a6ed55a24621b216604c17593ac8b12e4}{Palestrante\+\_\+\+New} (char $\ast$nome)
+\begin{DoxyCompactList}\small\item\em Retorna um palestrante inicializado. \end{DoxyCompactList}\item 
+void \hyperlink{_palestrante_8h_a89d1862e966d6281ccc5b9ec158fb09a}{Palestrante\+\_\+\+Add\+\_\+\+Disp} (\hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante} $\ast$p, \hyperlink{_disponibilidade_8h_af92f013b1928213088c2cd8ca3864596}{Disponibilidade} $\ast$disp)
+\begin{DoxyCompactList}\small\item\em Adiciona uma disponibilidade ao vetor. \end{DoxyCompactList}\item 
+int \hyperlink{_palestrante_8h_acab9919e4010176742cf7b462066ef85}{Palestrante\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size} (\hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Retorna o tamanho do vetor de disponibilidades. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{}\index{Palestrante.\+h@{Palestrante.\+h}!Palestrante@{Palestrante}}
+\index{Palestrante@{Palestrante}!Palestrante.\+h@{Palestrante.\+h}}
+\subsubsection[{Palestrante}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Palestrante} {\bf Palestrante}}\label{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}
+
+
+\subsection{Funções}
+\hypertarget{_palestrante_8h_a89d1862e966d6281ccc5b9ec158fb09a}{}\index{Palestrante.\+h@{Palestrante.\+h}!Palestrante\+\_\+\+Add\+\_\+\+Disp@{Palestrante\+\_\+\+Add\+\_\+\+Disp}}
+\index{Palestrante\+\_\+\+Add\+\_\+\+Disp@{Palestrante\+\_\+\+Add\+\_\+\+Disp}!Palestrante.\+h@{Palestrante.\+h}}
+\subsubsection[{Palestrante\+\_\+\+Add\+\_\+\+Disp(\+Palestrante $\ast$p, Disponibilidade $\ast$disp)}]{\setlength{\rightskip}{0pt plus 5cm}void Palestrante\+\_\+\+Add\+\_\+\+Disp (
+\begin{DoxyParamCaption}
+\item[{{\bf Palestrante} $\ast$}]{p, }
+\item[{{\bf Disponibilidade} $\ast$}]{disp}
+\end{DoxyParamCaption}
+)}\label{_palestrante_8h_a89d1862e966d6281ccc5b9ec158fb09a}
+
+
+Adiciona uma disponibilidade ao vetor. 
+
+\hypertarget{_palestrante_8h_ae244836fbf51a977039f91736571648e}{}\index{Palestrante.\+h@{Palestrante.\+h}!Palestrante\+\_\+\+Get\+\_\+\+Disp@{Palestrante\+\_\+\+Get\+\_\+\+Disp}}
+\index{Palestrante\+\_\+\+Get\+\_\+\+Disp@{Palestrante\+\_\+\+Get\+\_\+\+Disp}!Palestrante.\+h@{Palestrante.\+h}}
+\subsubsection[{Palestrante\+\_\+\+Get\+\_\+\+Disp(\+Palestrante $\ast$p)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disponibilidade}$\ast$$\ast$ Palestrante\+\_\+\+Get\+\_\+\+Disp (
+\begin{DoxyParamCaption}
+\item[{{\bf Palestrante} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\label{_palestrante_8h_ae244836fbf51a977039f91736571648e}
+
+
+Retorna o vetor de disponibilidades. 
+
+\hypertarget{_palestrante_8h_acab9919e4010176742cf7b462066ef85}{}\index{Palestrante.\+h@{Palestrante.\+h}!Palestrante\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size@{Palestrante\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size}}
+\index{Palestrante\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size@{Palestrante\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size}!Palestrante.\+h@{Palestrante.\+h}}
+\subsubsection[{Palestrante\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size(\+Palestrante $\ast$p)}]{\setlength{\rightskip}{0pt plus 5cm}int Palestrante\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf Palestrante} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\label{_palestrante_8h_acab9919e4010176742cf7b462066ef85}
+
+
+Retorna o tamanho do vetor de disponibilidades. 
+
+\hypertarget{_palestrante_8h_af5b8ce6e423e768a3b563bf8a8e72df9}{}\index{Palestrante.\+h@{Palestrante.\+h}!Palestrante\+\_\+\+Get\+\_\+\+Nome@{Palestrante\+\_\+\+Get\+\_\+\+Nome}}
+\index{Palestrante\+\_\+\+Get\+\_\+\+Nome@{Palestrante\+\_\+\+Get\+\_\+\+Nome}!Palestrante.\+h@{Palestrante.\+h}}
+\subsubsection[{Palestrante\+\_\+\+Get\+\_\+\+Nome(\+Palestrante $\ast$p)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Palestrante\+\_\+\+Get\+\_\+\+Nome (
+\begin{DoxyParamCaption}
+\item[{{\bf Palestrante} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\label{_palestrante_8h_af5b8ce6e423e768a3b563bf8a8e72df9}
+
+
+Retorna o nome. 
+
+\hypertarget{_palestrante_8h_a6ed55a24621b216604c17593ac8b12e4}{}\index{Palestrante.\+h@{Palestrante.\+h}!Palestrante\+\_\+\+New@{Palestrante\+\_\+\+New}}
+\index{Palestrante\+\_\+\+New@{Palestrante\+\_\+\+New}!Palestrante.\+h@{Palestrante.\+h}}
+\subsubsection[{Palestrante\+\_\+\+New(char $\ast$nome)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Palestrante}$\ast$ Palestrante\+\_\+\+New (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nome}
+\end{DoxyParamCaption}
+)}\label{_palestrante_8h_a6ed55a24621b216604c17593ac8b12e4}
+
+
+Retorna um palestrante inicializado. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & nome do palestrante para ser adicionado. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,121 @@
+\hypertarget{_local_8h}{}\section{Referência do Arquivo Local.\+h}
+\label{_local_8h}\index{Local.\+h@{Local.\+h}}
+{\ttfamily \#include \char`\"{}Disponibilidade.\+h\char`\"{}}\\*
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} \hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$ \hyperlink{_local_8h_ac17fbc4d3eb6601a650506b9e9f56ff4}{Local\+\_\+\+New} (char $\ast$nome, char $\ast$endereco)
+\begin{DoxyCompactList}\small\item\em Retorna uma estrutura instanciada. \end{DoxyCompactList}\item 
+void \hyperlink{_local_8h_ae0358caa11d77626ba7d8220d1cff4dd}{Local\+\_\+\+Add\+\_\+\+Disp} (\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$l, \hyperlink{_disponibilidade_8h_af92f013b1928213088c2cd8ca3864596}{Disponibilidade} $\ast$disp)
+\begin{DoxyCompactList}\small\item\em Adiciona uma disponibilidade. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{_local_8h_a7d308882364839eb953ad67345ae7b51}{Local\+\_\+\+Get\+\_\+\+Nome} (\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Retorna o nome. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{_local_8h_a55f4eb2f348109494fb6b95aa220ac74}{Local\+\_\+\+Get\+\_\+\+Endereco} (\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Retorna endereco. \end{DoxyCompactList}\item 
+int \hyperlink{_local_8h_aa32e845ce6ffb18c7259037de6eb4110}{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size} (\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Retorna o tamanho do vetor de disponibilidades. \end{DoxyCompactList}\item 
+\hyperlink{_disponibilidade_8h_af92f013b1928213088c2cd8ca3864596}{Disponibilidade} $\ast$$\ast$ \hyperlink{_local_8h_a362489f5c38b149783c672cbfa7332bf}{Local\+\_\+\+Get\+\_\+\+Disp} (\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Retorna o vetor de disponibilidades. \end{DoxyCompactList}\item 
+int \hyperlink{_local_8h_ab9ad8516af06c485a73fbaf037742df8}{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Pos} (\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$l, \hyperlink{_disponibilidade_8h_af92f013b1928213088c2cd8ca3864596}{Disponibilidade} $\ast$disp)
+\begin{DoxyCompactList}\small\item\em Retorna a posicao do vetor de disponibilidades. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{}\index{Local.\+h@{Local.\+h}!Local@{Local}}
+\index{Local@{Local}!Local.\+h@{Local.\+h}}
+\subsubsection[{Local}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Local} {\bf Local}}\label{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}
+
+
+\subsection{Funções}
+\hypertarget{_local_8h_ae0358caa11d77626ba7d8220d1cff4dd}{}\index{Local.\+h@{Local.\+h}!Local\+\_\+\+Add\+\_\+\+Disp@{Local\+\_\+\+Add\+\_\+\+Disp}}
+\index{Local\+\_\+\+Add\+\_\+\+Disp@{Local\+\_\+\+Add\+\_\+\+Disp}!Local.\+h@{Local.\+h}}
+\subsubsection[{Local\+\_\+\+Add\+\_\+\+Disp(\+Local $\ast$l, Disponibilidade $\ast$disp)}]{\setlength{\rightskip}{0pt plus 5cm}void Local\+\_\+\+Add\+\_\+\+Disp (
+\begin{DoxyParamCaption}
+\item[{{\bf Local} $\ast$}]{l, }
+\item[{{\bf Disponibilidade} $\ast$}]{disp}
+\end{DoxyParamCaption}
+)}\label{_local_8h_ae0358caa11d77626ba7d8220d1cff4dd}
+
+
+Adiciona uma disponibilidade. 
+
+Adiciona uma disponibilidade ao vetor de disponibilidades. \hypertarget{_local_8h_a362489f5c38b149783c672cbfa7332bf}{}\index{Local.\+h@{Local.\+h}!Local\+\_\+\+Get\+\_\+\+Disp@{Local\+\_\+\+Get\+\_\+\+Disp}}
+\index{Local\+\_\+\+Get\+\_\+\+Disp@{Local\+\_\+\+Get\+\_\+\+Disp}!Local.\+h@{Local.\+h}}
+\subsubsection[{Local\+\_\+\+Get\+\_\+\+Disp(\+Local $\ast$l)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disponibilidade}$\ast$$\ast$ Local\+\_\+\+Get\+\_\+\+Disp (
+\begin{DoxyParamCaption}
+\item[{{\bf Local} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}\label{_local_8h_a362489f5c38b149783c672cbfa7332bf}
+
+
+Retorna o vetor de disponibilidades. 
+
+\hypertarget{_local_8h_ab9ad8516af06c485a73fbaf037742df8}{}\index{Local.\+h@{Local.\+h}!Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Pos@{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Pos}}
+\index{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Pos@{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Pos}!Local.\+h@{Local.\+h}}
+\subsubsection[{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Pos(\+Local $\ast$l, Disponibilidade $\ast$disp)}]{\setlength{\rightskip}{0pt plus 5cm}int Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Pos (
+\begin{DoxyParamCaption}
+\item[{{\bf Local} $\ast$}]{l, }
+\item[{{\bf Disponibilidade} $\ast$}]{disp}
+\end{DoxyParamCaption}
+)}\label{_local_8h_ab9ad8516af06c485a73fbaf037742df8}
+
+
+Retorna a posicao do vetor de disponibilidades. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em l} & local a ser consultado. \\
+\hline
+{\em disp} & disponibilidade que servira como chave. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_local_8h_aa32e845ce6ffb18c7259037de6eb4110}{}\index{Local.\+h@{Local.\+h}!Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size@{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size}}
+\index{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size@{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size}!Local.\+h@{Local.\+h}}
+\subsubsection[{Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size(\+Local $\ast$l)}]{\setlength{\rightskip}{0pt plus 5cm}int Local\+\_\+\+Get\+\_\+\+Disp\+\_\+\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf Local} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}\label{_local_8h_aa32e845ce6ffb18c7259037de6eb4110}
+
+
+Retorna o tamanho do vetor de disponibilidades. 
+
+\hypertarget{_local_8h_a55f4eb2f348109494fb6b95aa220ac74}{}\index{Local.\+h@{Local.\+h}!Local\+\_\+\+Get\+\_\+\+Endereco@{Local\+\_\+\+Get\+\_\+\+Endereco}}
+\index{Local\+\_\+\+Get\+\_\+\+Endereco@{Local\+\_\+\+Get\+\_\+\+Endereco}!Local.\+h@{Local.\+h}}
+\subsubsection[{Local\+\_\+\+Get\+\_\+\+Endereco(\+Local $\ast$l)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Local\+\_\+\+Get\+\_\+\+Endereco (
+\begin{DoxyParamCaption}
+\item[{{\bf Local} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}\label{_local_8h_a55f4eb2f348109494fb6b95aa220ac74}
+
+
+Retorna endereco. 
+
+\hypertarget{_local_8h_a7d308882364839eb953ad67345ae7b51}{}\index{Local.\+h@{Local.\+h}!Local\+\_\+\+Get\+\_\+\+Nome@{Local\+\_\+\+Get\+\_\+\+Nome}}
+\index{Local\+\_\+\+Get\+\_\+\+Nome@{Local\+\_\+\+Get\+\_\+\+Nome}!Local.\+h@{Local.\+h}}
+\subsubsection[{Local\+\_\+\+Get\+\_\+\+Nome(\+Local $\ast$l)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Local\+\_\+\+Get\+\_\+\+Nome (
+\begin{DoxyParamCaption}
+\item[{{\bf Local} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}\label{_local_8h_a7d308882364839eb953ad67345ae7b51}
+
+
+Retorna o nome. 
+
+\hypertarget{_local_8h_ac17fbc4d3eb6601a650506b9e9f56ff4}{}\index{Local.\+h@{Local.\+h}!Local\+\_\+\+New@{Local\+\_\+\+New}}
+\index{Local\+\_\+\+New@{Local\+\_\+\+New}!Local.\+h@{Local.\+h}}
+\subsubsection[{Local\+\_\+\+New(char $\ast$nome, char $\ast$endereco)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$\ast$ Local\+\_\+\+New (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nome, }
+\item[{char $\ast$}]{endereco}
+\end{DoxyParamCaption}
+)}\label{_local_8h_ac17fbc4d3eb6601a650506b9e9f56ff4}
+
+
+Retorna uma estrutura instanciada. 
+

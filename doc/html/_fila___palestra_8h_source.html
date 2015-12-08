@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Trabalho 3 PS: Código-Fonte de Fila_Palestra.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Trabalho 3 PS
+   </div>
+   <div id="projectbrief">Integrantes: Alison de Miranda Péres 13/0039870 ; Guilherme Okita 13/0040304 ; Henrique Torres 11/0013085</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Fila_Palestra.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_fila___palestra_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HEADERS_FILA_PALESTRA_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HEADERS_FILA_PALESTRA_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_nodo___palestra_8h.html">Nodo_Palestra.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">    6</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a> <a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_fila___palestra_8h.html#a86b7d90d216f6ba3f46cec8494bc35f9">FilaPalestra_Add</a>(<a class="code" href="_nodo___palestra_8h.html#ab8a7dbfb4cf7c02cf4a9d185c914185a">NodePalestra</a>* np, <a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a>* fp);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a>* <a class="code" href="_fila___palestra_8h.html#a490bb5468ddfd3b4bcc56032c513c4a8">Fila_Palestra_New</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_fila___palestra_8h.html#a37d9e6e25678f4a73e4e36427b34369d">FilaPalestra_Is_Empty</a>(<a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a>* fp);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a>* <a class="code" href="_fila___palestra_8h.html#adfa88f5f80a5540262dd97e4548421e3">FilaPalestra_Pop</a>(<a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a>* fp);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="_nodo___palestra_8h.html#ab8a7dbfb4cf7c02cf4a9d185c914185a">NodePalestra</a>* <a class="code" href="_fila___palestra_8h.html#a5fe1e9a573ef1fe2d67df75faefa3b24">FilaPalestra_Get</a>(<a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a>* fp, <span class="keywordtype">char</span>* nome);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_fila___palestra_8h.html#a6c7667ce62d7164e04a83777b6046db2">FilaPalestra_Print</a>(<a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a>* fp);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="_nodo___palestra_8h.html#ab8a7dbfb4cf7c02cf4a9d185c914185a">NodePalestra</a>* <a class="code" href="_fila___palestra_8h.html#a9c3ac356e331b6b0bf0bf0206e72b71e">FilaPalestra_Get_With_Palestrante</a>(<a class="code" href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a>* fp, <span class="keywordtype">char</span>* nome);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="_fila___palestra_8h_html_a86b7d90d216f6ba3f46cec8494bc35f9"><div class="ttname"><a href="_fila___palestra_8h.html#a86b7d90d216f6ba3f46cec8494bc35f9">FilaPalestra_Add</a></div><div class="ttdeci">void FilaPalestra_Add(NodePalestra *np, FilaPalestra *fp)</div><div class="ttdoc">Adiciona um nodo a fila. </div></div>
+<div class="ttc" id="_fila___palestra_8h_html_a37d9e6e25678f4a73e4e36427b34369d"><div class="ttname"><a href="_fila___palestra_8h.html#a37d9e6e25678f4a73e4e36427b34369d">FilaPalestra_Is_Empty</a></div><div class="ttdeci">int FilaPalestra_Is_Empty(FilaPalestra *fp)</div><div class="ttdoc">Checa se a lista esta vazia. </div></div>
+<div class="ttc" id="_fila___palestra_8h_html_a6c7667ce62d7164e04a83777b6046db2"><div class="ttname"><a href="_fila___palestra_8h.html#a6c7667ce62d7164e04a83777b6046db2">FilaPalestra_Print</a></div><div class="ttdeci">void FilaPalestra_Print(FilaPalestra *fp)</div><div class="ttdoc">Imprime os valores contidos em palestra. </div></div>
+<div class="ttc" id="_nodo___palestra_8h_html"><div class="ttname"><a href="_nodo___palestra_8h.html">Nodo_Palestra.h</a></div></div>
+<div class="ttc" id="_nodo___palestra_8h_html_ab8a7dbfb4cf7c02cf4a9d185c914185a"><div class="ttname"><a href="_nodo___palestra_8h.html#ab8a7dbfb4cf7c02cf4a9d185c914185a">NodePalestra</a></div><div class="ttdeci">struct NodePalestra NodePalestra</div><div class="ttdef"><b>Definition:</b> Nodo_Palestra.h:6</div></div>
+<div class="ttc" id="_fila___palestra_8h_html_a490bb5468ddfd3b4bcc56032c513c4a8"><div class="ttname"><a href="_fila___palestra_8h.html#a490bb5468ddfd3b4bcc56032c513c4a8">Fila_Palestra_New</a></div><div class="ttdeci">FilaPalestra * Fila_Palestra_New()</div><div class="ttdoc">Instancia a fila. </div></div>
+<div class="ttc" id="_fila___palestra_8h_html_a9c3ac356e331b6b0bf0bf0206e72b71e"><div class="ttname"><a href="_fila___palestra_8h.html#a9c3ac356e331b6b0bf0bf0206e72b71e">FilaPalestra_Get_With_Palestrante</a></div><div class="ttdeci">NodePalestra * FilaPalestra_Get_With_Palestrante(FilaPalestra *fp, char *nome)</div></div>
+<div class="ttc" id="_fila___palestra_8h_html_a5fe1e9a573ef1fe2d67df75faefa3b24"><div class="ttname"><a href="_fila___palestra_8h.html#a5fe1e9a573ef1fe2d67df75faefa3b24">FilaPalestra_Get</a></div><div class="ttdeci">NodePalestra * FilaPalestra_Get(FilaPalestra *fp, char *nome)</div><div class="ttdoc">Retorna um ponteiro para o nodo que contem a chave. </div></div>
+<div class="ttc" id="_fila___palestra_8h_html_ae17ec8778748cb6a60a61c49f87f09fe"><div class="ttname"><a href="_fila___palestra_8h.html#ae17ec8778748cb6a60a61c49f87f09fe">FilaPalestra</a></div><div class="ttdeci">struct FilaPalestra FilaPalestra</div><div class="ttdef"><b>Definition:</b> Fila_Palestra.h:6</div></div>
+<div class="ttc" id="_fila___palestra_8h_html_adfa88f5f80a5540262dd97e4548421e3"><div class="ttname"><a href="_fila___palestra_8h.html#adfa88f5f80a5540262dd97e4548421e3">FilaPalestra_Pop</a></div><div class="ttdeci">FilaPalestra * FilaPalestra_Pop(FilaPalestra *fp)</div><div class="ttdoc">Deleta todos os valores da fila. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

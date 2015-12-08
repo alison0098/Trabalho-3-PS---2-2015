@@ -1,0 +1,147 @@
+\hypertarget{_fila___palestrante_8h}{}\section{Referência do Arquivo Fila\+\_\+\+Palestrante.\+h}
+\label{_fila___palestrante_8h}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+{\ttfamily \#include \char`\"{}Nodo\+\_\+\+Palestrante.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Disponibilidade.\+h\char`\"{}}\\*
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} \hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$ \hyperlink{_fila___palestrante_8h_a46a58dfded98c838534991d407865fb6}{Fila\+Palestrante\+\_\+\+New} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma instancia da fila. \end{DoxyCompactList}\item 
+void \hyperlink{_fila___palestrante_8h_ac675cef4c41ef4f6961394b244eeed34}{Fila\+Palestrante\+\_\+\+Add} (\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$node, \hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$fila)
+\begin{DoxyCompactList}\small\item\em Adiciona um nodo a fila. \end{DoxyCompactList}\item 
+int \hyperlink{_fila___palestrante_8h_ab8dc42d6716d640c7b583555fa79b910}{Fila\+Palestrante\+\_\+\+Is\+\_\+\+Empty} (\hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$fila)
+\begin{DoxyCompactList}\small\item\em Checa se a fila esta vazia. \end{DoxyCompactList}\item 
+\hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$ \hyperlink{_fila___palestrante_8h_a9a4c106b41526374387158c205245d1c}{Fila\+Palestrante\+\_\+\+Pop} (\hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Deleta a fila. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$ \hyperlink{_fila___palestrante_8h_a3bf15d5814a863e798d97203666ad2bc}{Fila\+Palestrante\+\_\+\+Get} (\hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$fp, char $\ast$nome)
+\begin{DoxyCompactList}\small\item\em Retorna um nodo dado uma chave. \end{DoxyCompactList}\item 
+void \hyperlink{_fila___palestrante_8h_abd8f0bae435c4418406efffe16864b35}{Fila\+Palestrante\+\_\+\+Print} (\hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Escreve na tela as informacoes de cada nodo. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$ \hyperlink{_fila___palestrante_8h_a85ae34762a7b8d2231ec0c82b48b3448}{Fila\+Palestrante\+\_\+\+Get\+\_\+\+First} (\hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Retorna o primeiro nodo da fila. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$ \hyperlink{_fila___palestrante_8h_aff8db5b97aec8beca54496bd1a77d6db}{Fila\+Palestrante\+\_\+\+Get\+\_\+\+Last} (\hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Retorna o ultimo nodo da fila. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{Node\+Palestrante\+Vector} $\ast$ \hyperlink{_fila___palestrante_8h_af6fa45390b1c65ba78572dc083fbdb0c}{Fila\+Palestrante\+\_\+\+To\+\_\+\+Vector} (\hyperlink{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{Fila\+Palestrante} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Retorna um vetor com os nodos da fila. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante@{Fila\+Palestrante}}
+\index{Fila\+Palestrante@{Fila\+Palestrante}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Fila\+Palestrante} {\bf Fila\+Palestrante}}\label{_fila___palestrante_8h_aa3fa50e27163ae1c344047e5014b8544}
+
+
+\subsection{Funções}
+\hypertarget{_fila___palestrante_8h_ac675cef4c41ef4f6961394b244eeed34}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante\+\_\+\+Add@{Fila\+Palestrante\+\_\+\+Add}}
+\index{Fila\+Palestrante\+\_\+\+Add@{Fila\+Palestrante\+\_\+\+Add}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante\+\_\+\+Add(\+Node\+Palestrante $\ast$node, Fila\+Palestrante $\ast$fila)}]{\setlength{\rightskip}{0pt plus 5cm}void Fila\+Palestrante\+\_\+\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Palestrante} $\ast$}]{node, }
+\item[{{\bf Fila\+Palestrante} $\ast$}]{fila}
+\end{DoxyParamCaption}
+)}\label{_fila___palestrante_8h_ac675cef4c41ef4f6961394b244eeed34}
+
+
+Adiciona um nodo a fila. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em node} & nodo a ser adicionado. \\
+\hline
+{\em fila} & fila a qual sera adicionado o nodo \\
+\hline
+\end{DoxyParams}
+\hypertarget{_fila___palestrante_8h_a3bf15d5814a863e798d97203666ad2bc}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante\+\_\+\+Get@{Fila\+Palestrante\+\_\+\+Get}}
+\index{Fila\+Palestrante\+\_\+\+Get@{Fila\+Palestrante\+\_\+\+Get}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante\+\_\+\+Get(\+Fila\+Palestrante $\ast$fp, char $\ast$nome)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Palestrante}$\ast$ Fila\+Palestrante\+\_\+\+Get (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Palestrante} $\ast$}]{fp, }
+\item[{char $\ast$}]{nome}
+\end{DoxyParamCaption}
+)}\label{_fila___palestrante_8h_a3bf15d5814a863e798d97203666ad2bc}
+
+
+Retorna um nodo dado uma chave. 
+
+\hypertarget{_fila___palestrante_8h_a85ae34762a7b8d2231ec0c82b48b3448}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante\+\_\+\+Get\+\_\+\+First@{Fila\+Palestrante\+\_\+\+Get\+\_\+\+First}}
+\index{Fila\+Palestrante\+\_\+\+Get\+\_\+\+First@{Fila\+Palestrante\+\_\+\+Get\+\_\+\+First}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante\+\_\+\+Get\+\_\+\+First(\+Fila\+Palestrante $\ast$f)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Palestrante}$\ast$ Fila\+Palestrante\+\_\+\+Get\+\_\+\+First (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Palestrante} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{_fila___palestrante_8h_a85ae34762a7b8d2231ec0c82b48b3448}
+
+
+Retorna o primeiro nodo da fila. 
+
+\hypertarget{_fila___palestrante_8h_aff8db5b97aec8beca54496bd1a77d6db}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante\+\_\+\+Get\+\_\+\+Last@{Fila\+Palestrante\+\_\+\+Get\+\_\+\+Last}}
+\index{Fila\+Palestrante\+\_\+\+Get\+\_\+\+Last@{Fila\+Palestrante\+\_\+\+Get\+\_\+\+Last}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante\+\_\+\+Get\+\_\+\+Last(\+Fila\+Palestrante $\ast$f)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Palestrante}$\ast$ Fila\+Palestrante\+\_\+\+Get\+\_\+\+Last (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Palestrante} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{_fila___palestrante_8h_aff8db5b97aec8beca54496bd1a77d6db}
+
+
+Retorna o ultimo nodo da fila. 
+
+\hypertarget{_fila___palestrante_8h_ab8dc42d6716d640c7b583555fa79b910}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante\+\_\+\+Is\+\_\+\+Empty@{Fila\+Palestrante\+\_\+\+Is\+\_\+\+Empty}}
+\index{Fila\+Palestrante\+\_\+\+Is\+\_\+\+Empty@{Fila\+Palestrante\+\_\+\+Is\+\_\+\+Empty}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante\+\_\+\+Is\+\_\+\+Empty(\+Fila\+Palestrante $\ast$fila)}]{\setlength{\rightskip}{0pt plus 5cm}int Fila\+Palestrante\+\_\+\+Is\+\_\+\+Empty (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Palestrante} $\ast$}]{fila}
+\end{DoxyParamCaption}
+)}\label{_fila___palestrante_8h_ab8dc42d6716d640c7b583555fa79b910}
+
+
+Checa se a fila esta vazia. 
+
+\hypertarget{_fila___palestrante_8h_a46a58dfded98c838534991d407865fb6}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante\+\_\+\+New@{Fila\+Palestrante\+\_\+\+New}}
+\index{Fila\+Palestrante\+\_\+\+New@{Fila\+Palestrante\+\_\+\+New}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante\+\_\+\+New()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fila\+Palestrante}$\ast$ Fila\+Palestrante\+\_\+\+New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_fila___palestrante_8h_a46a58dfded98c838534991d407865fb6}
+
+
+Retorna uma instancia da fila. 
+
+\hypertarget{_fila___palestrante_8h_a9a4c106b41526374387158c205245d1c}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante\+\_\+\+Pop@{Fila\+Palestrante\+\_\+\+Pop}}
+\index{Fila\+Palestrante\+\_\+\+Pop@{Fila\+Palestrante\+\_\+\+Pop}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante\+\_\+\+Pop(\+Fila\+Palestrante $\ast$fp)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fila\+Palestrante}$\ast$ Fila\+Palestrante\+\_\+\+Pop (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Palestrante} $\ast$}]{fp}
+\end{DoxyParamCaption}
+)}\label{_fila___palestrante_8h_a9a4c106b41526374387158c205245d1c}
+
+
+Deleta a fila. 
+
+\hypertarget{_fila___palestrante_8h_abd8f0bae435c4418406efffe16864b35}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante\+\_\+\+Print@{Fila\+Palestrante\+\_\+\+Print}}
+\index{Fila\+Palestrante\+\_\+\+Print@{Fila\+Palestrante\+\_\+\+Print}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante\+\_\+\+Print(\+Fila\+Palestrante $\ast$f)}]{\setlength{\rightskip}{0pt plus 5cm}void Fila\+Palestrante\+\_\+\+Print (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Palestrante} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{_fila___palestrante_8h_abd8f0bae435c4418406efffe16864b35}
+
+
+Escreve na tela as informacoes de cada nodo. 
+
+\hypertarget{_fila___palestrante_8h_af6fa45390b1c65ba78572dc083fbdb0c}{}\index{Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}!Fila\+Palestrante\+\_\+\+To\+\_\+\+Vector@{Fila\+Palestrante\+\_\+\+To\+\_\+\+Vector}}
+\index{Fila\+Palestrante\+\_\+\+To\+\_\+\+Vector@{Fila\+Palestrante\+\_\+\+To\+\_\+\+Vector}!Fila\+\_\+\+Palestrante.\+h@{Fila\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Fila\+Palestrante\+\_\+\+To\+\_\+\+Vector(\+Fila\+Palestrante $\ast$f)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Palestrante\+Vector}$\ast$ Fila\+Palestrante\+\_\+\+To\+\_\+\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Palestrante} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{_fila___palestrante_8h_af6fa45390b1c65ba78572dc083fbdb0c}
+
+
+Retorna um vetor com os nodos da fila. 
+

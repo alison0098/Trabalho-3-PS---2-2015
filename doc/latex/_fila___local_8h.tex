@@ -1,0 +1,160 @@
+\hypertarget{_fila___local_8h}{}\section{Referência do Arquivo Fila\+\_\+\+Local.\+h}
+\label{_fila___local_8h}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+{\ttfamily \#include \char`\"{}Nodo\+\_\+\+Local.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Disponibilidade.\+h\char`\"{}}\\*
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} \hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$ \hyperlink{_fila___local_8h_a114fdba3fb3f3f0da77faf833045b16e}{Fila\+Local\+\_\+\+New} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma instancia da estrutura. \end{DoxyCompactList}\item 
+void \hyperlink{_fila___local_8h_a77882fdbe61fcb4462211d18e9255e37}{Fila\+Local\+\_\+\+Add} (\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$node, \hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$fila)
+\begin{DoxyCompactList}\small\item\em Adiciona nodo. \end{DoxyCompactList}\item 
+int \hyperlink{_fila___local_8h_ab3e72130ea9714e781937fc887c829f0}{Fila\+Local\+\_\+\+Is\+\_\+\+Empty} (\hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$fila)
+\begin{DoxyCompactList}\small\item\em Checa se a fila esta vazia. \end{DoxyCompactList}\item 
+\hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$ \hyperlink{_fila___local_8h_a07bc80401540858aa3bbe8fbc85b8ee0}{Fila\+Local\+\_\+\+Pop} (\hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Deleta a fila. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$ \hyperlink{_fila___local_8h_a1aa76adf6862c30098a41cb4cfeaffcc}{Fila\+Local\+\_\+\+Get} (\hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$fp, char $\ast$nome)
+\begin{DoxyCompactList}\small\item\em Pega um nodo. \end{DoxyCompactList}\item 
+void \hyperlink{_fila___local_8h_a290398357fb509c15d2bb0820359bf75}{Fila\+Local\+\_\+\+Print} (\hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Escreve valores importantes na tela. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$ \hyperlink{_fila___local_8h_a5ae925b8f26b30484af7aaa2a4db8aff}{Fila\+Local\+\_\+\+Get\+\_\+\+First} (\hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Retorna o primeiro valor da fila. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$ \hyperlink{_fila___local_8h_a87fb4930afd2f9c1ca4e55ad507ada5a}{Fila\+Local\+\_\+\+Get\+\_\+\+Last} (\hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Retorna o ultimo valor da fila. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{Node\+Local\+Vector} $\ast$ \hyperlink{_fila___local_8h_ad196d1258ba3a1c97afd7512cbdf9c12}{Fila\+Local\+\_\+\+To\+\_\+\+Vector} (\hyperlink{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{Fila\+Local} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Transforma a fila em um vetor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local@{Fila\+Local}}
+\index{Fila\+Local@{Fila\+Local}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Fila\+Local} {\bf Fila\+Local}}\label{_fila___local_8h_a08c55bd7cc07439754e3daa537fcce28}
+
+
+\subsection{Funções}
+\hypertarget{_fila___local_8h_a77882fdbe61fcb4462211d18e9255e37}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local\+\_\+\+Add@{Fila\+Local\+\_\+\+Add}}
+\index{Fila\+Local\+\_\+\+Add@{Fila\+Local\+\_\+\+Add}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local\+\_\+\+Add(\+Node\+Local $\ast$node, Fila\+Local $\ast$fila)}]{\setlength{\rightskip}{0pt plus 5cm}void Fila\+Local\+\_\+\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Local} $\ast$}]{node, }
+\item[{{\bf Fila\+Local} $\ast$}]{fila}
+\end{DoxyParamCaption}
+)}\label{_fila___local_8h_a77882fdbe61fcb4462211d18e9255e37}
+
+
+Adiciona nodo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em node} & nodo a ser adicionado. \\
+\hline
+{\em fila} & fila a qual sera adicionada o nodo. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_fila___local_8h_a1aa76adf6862c30098a41cb4cfeaffcc}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local\+\_\+\+Get@{Fila\+Local\+\_\+\+Get}}
+\index{Fila\+Local\+\_\+\+Get@{Fila\+Local\+\_\+\+Get}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local\+\_\+\+Get(\+Fila\+Local $\ast$fp, char $\ast$nome)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Local}$\ast$ Fila\+Local\+\_\+\+Get (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Local} $\ast$}]{fp, }
+\item[{char $\ast$}]{nome}
+\end{DoxyParamCaption}
+)}\label{_fila___local_8h_a1aa76adf6862c30098a41cb4cfeaffcc}
+
+
+Pega um nodo. 
+
+a partir de um nome. 
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & identificador. \\
+\hline
+{\em fp} & fila a qual sera procurado o nome. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+N\+U\+L\+L se nao for encontrado, referencia ao nodo caso contrario. 
+\end{DoxyReturn}
+\hypertarget{_fila___local_8h_a5ae925b8f26b30484af7aaa2a4db8aff}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local\+\_\+\+Get\+\_\+\+First@{Fila\+Local\+\_\+\+Get\+\_\+\+First}}
+\index{Fila\+Local\+\_\+\+Get\+\_\+\+First@{Fila\+Local\+\_\+\+Get\+\_\+\+First}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local\+\_\+\+Get\+\_\+\+First(\+Fila\+Local $\ast$f)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Local}$\ast$ Fila\+Local\+\_\+\+Get\+\_\+\+First (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Local} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{_fila___local_8h_a5ae925b8f26b30484af7aaa2a4db8aff}
+
+
+Retorna o primeiro valor da fila. 
+
+\hypertarget{_fila___local_8h_a87fb4930afd2f9c1ca4e55ad507ada5a}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local\+\_\+\+Get\+\_\+\+Last@{Fila\+Local\+\_\+\+Get\+\_\+\+Last}}
+\index{Fila\+Local\+\_\+\+Get\+\_\+\+Last@{Fila\+Local\+\_\+\+Get\+\_\+\+Last}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local\+\_\+\+Get\+\_\+\+Last(\+Fila\+Local $\ast$f)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Local}$\ast$ Fila\+Local\+\_\+\+Get\+\_\+\+Last (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Local} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{_fila___local_8h_a87fb4930afd2f9c1ca4e55ad507ada5a}
+
+
+Retorna o ultimo valor da fila. 
+
+\hypertarget{_fila___local_8h_ab3e72130ea9714e781937fc887c829f0}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local\+\_\+\+Is\+\_\+\+Empty@{Fila\+Local\+\_\+\+Is\+\_\+\+Empty}}
+\index{Fila\+Local\+\_\+\+Is\+\_\+\+Empty@{Fila\+Local\+\_\+\+Is\+\_\+\+Empty}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local\+\_\+\+Is\+\_\+\+Empty(\+Fila\+Local $\ast$fila)}]{\setlength{\rightskip}{0pt plus 5cm}int Fila\+Local\+\_\+\+Is\+\_\+\+Empty (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Local} $\ast$}]{fila}
+\end{DoxyParamCaption}
+)}\label{_fila___local_8h_ab3e72130ea9714e781937fc887c829f0}
+
+
+Checa se a fila esta vazia. 
+
+\hypertarget{_fila___local_8h_a114fdba3fb3f3f0da77faf833045b16e}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local\+\_\+\+New@{Fila\+Local\+\_\+\+New}}
+\index{Fila\+Local\+\_\+\+New@{Fila\+Local\+\_\+\+New}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local\+\_\+\+New()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fila\+Local}$\ast$ Fila\+Local\+\_\+\+New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_fila___local_8h_a114fdba3fb3f3f0da77faf833045b16e}
+
+
+Retorna uma instancia da estrutura. 
+
+\hypertarget{_fila___local_8h_a07bc80401540858aa3bbe8fbc85b8ee0}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local\+\_\+\+Pop@{Fila\+Local\+\_\+\+Pop}}
+\index{Fila\+Local\+\_\+\+Pop@{Fila\+Local\+\_\+\+Pop}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local\+\_\+\+Pop(\+Fila\+Local $\ast$fp)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fila\+Local}$\ast$ Fila\+Local\+\_\+\+Pop (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Local} $\ast$}]{fp}
+\end{DoxyParamCaption}
+)}\label{_fila___local_8h_a07bc80401540858aa3bbe8fbc85b8ee0}
+
+
+Deleta a fila. 
+
+\begin{DoxyReturn}{Retorna}
+N\+U\+L\+L se bem sucedido. 
+\end{DoxyReturn}
+\hypertarget{_fila___local_8h_a290398357fb509c15d2bb0820359bf75}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local\+\_\+\+Print@{Fila\+Local\+\_\+\+Print}}
+\index{Fila\+Local\+\_\+\+Print@{Fila\+Local\+\_\+\+Print}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local\+\_\+\+Print(\+Fila\+Local $\ast$f)}]{\setlength{\rightskip}{0pt plus 5cm}void Fila\+Local\+\_\+\+Print (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Local} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{_fila___local_8h_a290398357fb509c15d2bb0820359bf75}
+
+
+Escreve valores importantes na tela. 
+
+Percorre a fila escrevendo na dela os valores importantes. \hypertarget{_fila___local_8h_ad196d1258ba3a1c97afd7512cbdf9c12}{}\index{Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}!Fila\+Local\+\_\+\+To\+\_\+\+Vector@{Fila\+Local\+\_\+\+To\+\_\+\+Vector}}
+\index{Fila\+Local\+\_\+\+To\+\_\+\+Vector@{Fila\+Local\+\_\+\+To\+\_\+\+Vector}!Fila\+\_\+\+Local.\+h@{Fila\+\_\+\+Local.\+h}}
+\subsubsection[{Fila\+Local\+\_\+\+To\+\_\+\+Vector(\+Fila\+Local $\ast$f)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Local\+Vector}$\ast$ Fila\+Local\+\_\+\+To\+\_\+\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Fila\+Local} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{_fila___local_8h_ad196d1258ba3a1c97afd7512cbdf9c12}
+
+
+Transforma a fila em um vetor. 
+

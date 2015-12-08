@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Trabalho 3 PS: Código-Fonte de Nodo_Local.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Trabalho 3 PS
+   </div>
+   <div id="projectbrief">Integrantes: Alison de Miranda Péres 13/0039870 ; Guilherme Okita 13/0040304 ; Henrique Torres 11/0013085</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Nodo_Local.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_nodo___local_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Nodo_Local.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 31/10/2015</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Guilherme</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef HEADERS_NODO_LOCAL_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define HEADERS_NODO_LOCAL_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_local_8h.html">Local.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a> <a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">NodeLocalVector</a> <a class="code" href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">NodeLocalVector</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a>* <a class="code" href="_nodo___local_8h.html#a46393f6371f03b56498cc7623bb56eea">NodeLocal_New</a>(<a class="code" href="_local_8h.html#a23473a9197a21b4e1b4c71e229c28a6a">Local</a>* l);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a>* <a class="code" href="_nodo___local_8h.html#a1ea3bf73ab0b9f9cf1a23ab59ea9f416">NodeLocal_Get_Prox</a>(<a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a>* nl);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="_local_8h.html#a23473a9197a21b4e1b4c71e229c28a6a">Local</a>* <a class="code" href="_nodo___local_8h.html#accc08953eb2251f71a9e8bc7849c74b7">NodeLocal_Get</a>(<a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a>* nl);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_nodo___local_8h.html#afd91089e31847615bb8dc47fa9d89a27">NodeLocal_Set_Prox</a>(<a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a>* nl, <a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a>* prox);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">NodeLocalVector</a>* <a class="code" href="_nodo___local_8h.html#a997e0cfb99c218c9d66126d3558cbafb">NodeLocal_Vector_New</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_nodo___local_8h.html#a5953dbc0959018723842eb2b6cb96753">NodeLocal_Vector_Add</a>(<a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a>* nl, <a class="code" href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">NodeLocalVector</a>* nv);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">NodeLocalVector</a>* <a class="code" href="_nodo___local_8h.html#a9d26119def3c77585acaae4b51df33fb">NodeLocal_Vector_Del</a>(<a class="code" href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">NodeLocalVector</a>* nlv);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_nodo___local_8h.html#a9ed9c7163fbf93c7e259713a886fef5a">NodeLocal_Vector_Get_Size</a>(<a class="code" href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">NodeLocalVector</a>* nv);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a>* <a class="code" href="_nodo___local_8h.html#a2e4b9463e0f3cb0efa7fefa6a88b31f0">NodeLocal_Vector_Get</a>(<a class="code" href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">NodeLocalVector</a>* nv, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* HEADERS_NODO_LOCAL_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="_nodo___local_8h_html_a46393f6371f03b56498cc7623bb56eea"><div class="ttname"><a href="_nodo___local_8h.html#a46393f6371f03b56498cc7623bb56eea">NodeLocal_New</a></div><div class="ttdeci">NodeLocal * NodeLocal_New(Local *l)</div><div class="ttdoc">Retorna um Nodo instanciado. </div></div>
+<div class="ttc" id="_nodo___local_8h_html_a2e4b9463e0f3cb0efa7fefa6a88b31f0"><div class="ttname"><a href="_nodo___local_8h.html#a2e4b9463e0f3cb0efa7fefa6a88b31f0">NodeLocal_Vector_Get</a></div><div class="ttdeci">NodeLocal * NodeLocal_Vector_Get(NodeLocalVector *nv, int i)</div><div class="ttdoc">Retorna um Nodo dado o vetor e a posicao. </div></div>
+<div class="ttc" id="_nodo___local_8h_html_a1ea3bf73ab0b9f9cf1a23ab59ea9f416"><div class="ttname"><a href="_nodo___local_8h.html#a1ea3bf73ab0b9f9cf1a23ab59ea9f416">NodeLocal_Get_Prox</a></div><div class="ttdeci">NodeLocal * NodeLocal_Get_Prox(NodeLocal *nl)</div><div class="ttdoc">Retorna o campo prox do nodo. </div></div>
+<div class="ttc" id="_local_8h_html_a23473a9197a21b4e1b4c71e229c28a6a"><div class="ttname"><a href="_local_8h.html#a23473a9197a21b4e1b4c71e229c28a6a">Local</a></div><div class="ttdeci">struct Local Local</div><div class="ttdef"><b>Definition:</b> Local.h:12</div></div>
+<div class="ttc" id="_nodo___local_8h_html_a997e0cfb99c218c9d66126d3558cbafb"><div class="ttname"><a href="_nodo___local_8h.html#a997e0cfb99c218c9d66126d3558cbafb">NodeLocal_Vector_New</a></div><div class="ttdeci">NodeLocalVector * NodeLocal_Vector_New()</div><div class="ttdoc">Retorna um vetor de locais instanciado. </div></div>
+<div class="ttc" id="_nodo___local_8h_html_accc08953eb2251f71a9e8bc7849c74b7"><div class="ttname"><a href="_nodo___local_8h.html#accc08953eb2251f71a9e8bc7849c74b7">NodeLocal_Get</a></div><div class="ttdeci">Local * NodeLocal_Get(NodeLocal *nl)</div><div class="ttdoc">Retorna um local dado um nodo. </div></div>
+<div class="ttc" id="_nodo___local_8h_html_ac41db9c5d20d87a3678d2686aea1bb45"><div class="ttname"><a href="_nodo___local_8h.html#ac41db9c5d20d87a3678d2686aea1bb45">NodeLocalVector</a></div><div class="ttdeci">struct NodeLocalVector NodeLocalVector</div><div class="ttdef"><b>Definition:</b> Nodo_Local.h:14</div></div>
+<div class="ttc" id="_nodo___local_8h_html_a9d26119def3c77585acaae4b51df33fb"><div class="ttname"><a href="_nodo___local_8h.html#a9d26119def3c77585acaae4b51df33fb">NodeLocal_Vector_Del</a></div><div class="ttdeci">NodeLocalVector * NodeLocal_Vector_Del(NodeLocalVector *nlv)</div><div class="ttdoc">Deleta o vetor de nodos. </div></div>
+<div class="ttc" id="_local_8h_html"><div class="ttname"><a href="_local_8h.html">Local.h</a></div></div>
+<div class="ttc" id="_nodo___local_8h_html_ac5f3a1eb3ceb3a52ffc7eed65823ae46"><div class="ttname"><a href="_nodo___local_8h.html#ac5f3a1eb3ceb3a52ffc7eed65823ae46">NodeLocal</a></div><div class="ttdeci">struct NodeLocal NodeLocal</div><div class="ttdef"><b>Definition:</b> Nodo_Local.h:13</div></div>
+<div class="ttc" id="_nodo___local_8h_html_afd91089e31847615bb8dc47fa9d89a27"><div class="ttname"><a href="_nodo___local_8h.html#afd91089e31847615bb8dc47fa9d89a27">NodeLocal_Set_Prox</a></div><div class="ttdeci">void NodeLocal_Set_Prox(NodeLocal *nl, NodeLocal *prox)</div><div class="ttdoc">Atribui um nodo ao campo proximo de nl. </div></div>
+<div class="ttc" id="_nodo___local_8h_html_a5953dbc0959018723842eb2b6cb96753"><div class="ttname"><a href="_nodo___local_8h.html#a5953dbc0959018723842eb2b6cb96753">NodeLocal_Vector_Add</a></div><div class="ttdeci">void NodeLocal_Vector_Add(NodeLocal *nl, NodeLocalVector *nv)</div><div class="ttdoc">Adiciona um nodo ao vetor nv. </div></div>
+<div class="ttc" id="_nodo___local_8h_html_a9ed9c7163fbf93c7e259713a886fef5a"><div class="ttname"><a href="_nodo___local_8h.html#a9ed9c7163fbf93c7e259713a886fef5a">NodeLocal_Vector_Get_Size</a></div><div class="ttdeci">int NodeLocal_Vector_Get_Size(NodeLocalVector *nv)</div><div class="ttdoc">Retorna o tamanho do vetor. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

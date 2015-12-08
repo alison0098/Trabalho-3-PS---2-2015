@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Trabalho 3 PS: Código-Fonte de Calendario_Manager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Trabalho 3 PS
+   </div>
+   <div id="projectbrief">Integrantes: Alison de Miranda Péres 13/0039870 ; Guilherme Okita 13/0040304 ; Henrique Torres 11/0013085</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Calendario_Manager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_calendario___manager_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Calendario_Manager.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 02/11/2015</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Guilherme</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef HEADERS_CALENDARIO_MANAGER_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define HEADERS_CALENDARIO_MANAGER_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_calendario_8h.html">Calendario.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_calendario___manager_8h.html#a56a476157bb3bf0b62d09683fb0d86c8">   13</a></span>&#160;<span class="keyword">static</span> <a class="code" href="_calendario_8h.html#a1d654b8d838be9c3325ae60139354d74">Calendario</a>** <a class="code" href="_calendario___manager_8h.html#a56a476157bb3bf0b62d09683fb0d86c8">calendario</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_calendario___manager_8h.html#ada7da6aee3ee2471768c9dfaf101f0db">   14</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="_calendario___manager_8h.html#ada7da6aee3ee2471768c9dfaf101f0db">Calendario_Vector_Size</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_calendario___manager_8h.html#a63e0fbab1d6dacdba7d8ae04dc8c33a0">Calendario_Manager_Initialize</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_calendario___manager_8h.html#a91d1712159612bc2402a98af6a691e1f">Calendario_Manager_Add</a>(<a class="code" href="_calendario_8h.html#a1d654b8d838be9c3325ae60139354d74">Calendario</a>* cal);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_calendario___manager_8h.html#aea4aaf4c755cac4fea86fef2d73d2e9d">Calendario_Manager_Print</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_calendario___manager_8h.html#a6c931d530ad96e9186dae8d1666609b4">Calendario_Manager_Delete</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_calendario___manager_8h.html#aed4c330b672530a0f1c6db1933a055dc">Calendario_Manager_Search_By_Day</a>(<span class="keywordtype">int</span> dia);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_calendario___manager_8h.html#a665c5be5189038051393ca01a7e3b9c7">Calendario_Manager_Search_By_Month</a>(<span class="keywordtype">int</span> mes);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_calendario___manager_8h.html#ae3cacfd0a1fad146dce9c2582bcce956">Calendario_Manager_Search_By_Year</a>(<span class="keywordtype">int</span> ano);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* HEADERS_CALENDARIO_MANAGER_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="_calendario_8h_html"><div class="ttname"><a href="_calendario_8h.html">Calendario.h</a></div></div>
+<div class="ttc" id="_calendario___manager_8h_html_ada7da6aee3ee2471768c9dfaf101f0db"><div class="ttname"><a href="_calendario___manager_8h.html#ada7da6aee3ee2471768c9dfaf101f0db">Calendario_Vector_Size</a></div><div class="ttdeci">static int Calendario_Vector_Size</div><div class="ttdef"><b>Definition:</b> Calendario_Manager.h:14</div></div>
+<div class="ttc" id="_calendario___manager_8h_html_ae3cacfd0a1fad146dce9c2582bcce956"><div class="ttname"><a href="_calendario___manager_8h.html#ae3cacfd0a1fad146dce9c2582bcce956">Calendario_Manager_Search_By_Year</a></div><div class="ttdeci">void Calendario_Manager_Search_By_Year(int ano)</div><div class="ttdoc">Escreve uma lista de palestras dado um ano. </div></div>
+<div class="ttc" id="_calendario___manager_8h_html_aed4c330b672530a0f1c6db1933a055dc"><div class="ttname"><a href="_calendario___manager_8h.html#aed4c330b672530a0f1c6db1933a055dc">Calendario_Manager_Search_By_Day</a></div><div class="ttdeci">void Calendario_Manager_Search_By_Day(int dia)</div><div class="ttdoc">Escreve uma lista de palestras dado um dia. </div></div>
+<div class="ttc" id="_calendario___manager_8h_html_a665c5be5189038051393ca01a7e3b9c7"><div class="ttname"><a href="_calendario___manager_8h.html#a665c5be5189038051393ca01a7e3b9c7">Calendario_Manager_Search_By_Month</a></div><div class="ttdeci">void Calendario_Manager_Search_By_Month(int mes)</div><div class="ttdoc">Escreve uma lista de palestras dado um mes. </div></div>
+<div class="ttc" id="_calendario___manager_8h_html_a6c931d530ad96e9186dae8d1666609b4"><div class="ttname"><a href="_calendario___manager_8h.html#a6c931d530ad96e9186dae8d1666609b4">Calendario_Manager_Delete</a></div><div class="ttdeci">void Calendario_Manager_Delete()</div></div>
+<div class="ttc" id="_calendario___manager_8h_html_aea4aaf4c755cac4fea86fef2d73d2e9d"><div class="ttname"><a href="_calendario___manager_8h.html#aea4aaf4c755cac4fea86fef2d73d2e9d">Calendario_Manager_Print</a></div><div class="ttdeci">void Calendario_Manager_Print()</div><div class="ttdoc">Escreve um arquivo feito os devidos processamentos. </div></div>
+<div class="ttc" id="_calendario___manager_8h_html_a56a476157bb3bf0b62d09683fb0d86c8"><div class="ttname"><a href="_calendario___manager_8h.html#a56a476157bb3bf0b62d09683fb0d86c8">calendario</a></div><div class="ttdeci">static Calendario ** calendario</div><div class="ttdef"><b>Definition:</b> Calendario_Manager.h:13</div></div>
+<div class="ttc" id="_calendario___manager_8h_html_a63e0fbab1d6dacdba7d8ae04dc8c33a0"><div class="ttname"><a href="_calendario___manager_8h.html#a63e0fbab1d6dacdba7d8ae04dc8c33a0">Calendario_Manager_Initialize</a></div><div class="ttdeci">void Calendario_Manager_Initialize()</div><div class="ttdoc">Inicializa a estrutura de calendario. </div></div>
+<div class="ttc" id="_calendario___manager_8h_html_a91d1712159612bc2402a98af6a691e1f"><div class="ttname"><a href="_calendario___manager_8h.html#a91d1712159612bc2402a98af6a691e1f">Calendario_Manager_Add</a></div><div class="ttdeci">void Calendario_Manager_Add(Calendario *cal)</div><div class="ttdoc">Adiciona um Calendario* a estrutura. </div></div>
+<div class="ttc" id="_calendario_8h_html_a1d654b8d838be9c3325ae60139354d74"><div class="ttname"><a href="_calendario_8h.html#a1d654b8d838be9c3325ae60139354d74">Calendario</a></div><div class="ttdeci">struct Calendario Calendario</div><div class="ttdef"><b>Definition:</b> Calendario.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

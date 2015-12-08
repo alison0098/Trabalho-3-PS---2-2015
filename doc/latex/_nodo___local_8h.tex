@@ -1,0 +1,152 @@
+\hypertarget{_nodo___local_8h}{}\section{Referência do Arquivo Nodo\+\_\+\+Local.\+h}
+\label{_nodo___local_8h}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+{\ttfamily \#include \char`\"{}Local.\+h\char`\"{}}\\*
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} \hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local}
+\item 
+typedef struct \hyperlink{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{Node\+Local\+Vector} \hyperlink{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{Node\+Local\+Vector}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$ \hyperlink{_nodo___local_8h_a46393f6371f03b56498cc7623bb56eea}{Node\+Local\+\_\+\+New} (\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Retorna um Nodo instanciado. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$ \hyperlink{_nodo___local_8h_a1ea3bf73ab0b9f9cf1a23ab59ea9f416}{Node\+Local\+\_\+\+Get\+\_\+\+Prox} (\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$nl)
+\begin{DoxyCompactList}\small\item\em Retorna o campo prox do nodo. \end{DoxyCompactList}\item 
+\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$ \hyperlink{_nodo___local_8h_accc08953eb2251f71a9e8bc7849c74b7}{Node\+Local\+\_\+\+Get} (\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$nl)
+\begin{DoxyCompactList}\small\item\em Retorna um local dado um nodo. \end{DoxyCompactList}\item 
+void \hyperlink{_nodo___local_8h_afd91089e31847615bb8dc47fa9d89a27}{Node\+Local\+\_\+\+Set\+\_\+\+Prox} (\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$nl, \hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$prox)
+\begin{DoxyCompactList}\small\item\em Atribui um nodo ao campo proximo de nl. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{Node\+Local\+Vector} $\ast$ \hyperlink{_nodo___local_8h_a997e0cfb99c218c9d66126d3558cbafb}{Node\+Local\+\_\+\+Vector\+\_\+\+New} ()
+\begin{DoxyCompactList}\small\item\em Retorna um vetor de locais instanciado. \end{DoxyCompactList}\item 
+void \hyperlink{_nodo___local_8h_a5953dbc0959018723842eb2b6cb96753}{Node\+Local\+\_\+\+Vector\+\_\+\+Add} (\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$nl, \hyperlink{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{Node\+Local\+Vector} $\ast$nv)
+\begin{DoxyCompactList}\small\item\em Adiciona um nodo ao vetor nv. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{Node\+Local\+Vector} $\ast$ \hyperlink{_nodo___local_8h_a9d26119def3c77585acaae4b51df33fb}{Node\+Local\+\_\+\+Vector\+\_\+\+Del} (\hyperlink{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{Node\+Local\+Vector} $\ast$nlv)
+\begin{DoxyCompactList}\small\item\em Deleta o vetor de nodos. \end{DoxyCompactList}\item 
+int \hyperlink{_nodo___local_8h_a9ed9c7163fbf93c7e259713a886fef5a}{Node\+Local\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size} (\hyperlink{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{Node\+Local\+Vector} $\ast$nv)
+\begin{DoxyCompactList}\small\item\em Retorna o tamanho do vetor. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{Node\+Local} $\ast$ \hyperlink{_nodo___local_8h_a2e4b9463e0f3cb0efa7fefa6a88b31f0}{Node\+Local\+\_\+\+Vector\+\_\+\+Get} (\hyperlink{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{Node\+Local\+Vector} $\ast$nv, int i)
+\begin{DoxyCompactList}\small\item\em Retorna um Nodo dado o vetor e a posicao. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local@{Node\+Local}}
+\index{Node\+Local@{Node\+Local}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Node\+Local} {\bf Node\+Local}}\label{_nodo___local_8h_ac5f3a1eb3ceb3a52ffc7eed65823ae46}
+\hypertarget{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+Vector@{Node\+Local\+Vector}}
+\index{Node\+Local\+Vector@{Node\+Local\+Vector}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Node\+Local\+Vector} {\bf Node\+Local\+Vector}}\label{_nodo___local_8h_ac41db9c5d20d87a3678d2686aea1bb45}
+
+
+\subsection{Funções}
+\hypertarget{_nodo___local_8h_accc08953eb2251f71a9e8bc7849c74b7}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+\_\+\+Get@{Node\+Local\+\_\+\+Get}}
+\index{Node\+Local\+\_\+\+Get@{Node\+Local\+\_\+\+Get}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+\_\+\+Get(\+Node\+Local $\ast$nl)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$\ast$ Node\+Local\+\_\+\+Get (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Local} $\ast$}]{nl}
+\end{DoxyParamCaption}
+)}\label{_nodo___local_8h_accc08953eb2251f71a9e8bc7849c74b7}
+
+
+Retorna um local dado um nodo. 
+
+\hypertarget{_nodo___local_8h_a1ea3bf73ab0b9f9cf1a23ab59ea9f416}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+\_\+\+Get\+\_\+\+Prox@{Node\+Local\+\_\+\+Get\+\_\+\+Prox}}
+\index{Node\+Local\+\_\+\+Get\+\_\+\+Prox@{Node\+Local\+\_\+\+Get\+\_\+\+Prox}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+\_\+\+Get\+\_\+\+Prox(\+Node\+Local $\ast$nl)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Local}$\ast$ Node\+Local\+\_\+\+Get\+\_\+\+Prox (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Local} $\ast$}]{nl}
+\end{DoxyParamCaption}
+)}\label{_nodo___local_8h_a1ea3bf73ab0b9f9cf1a23ab59ea9f416}
+
+
+Retorna o campo prox do nodo. 
+
+\hypertarget{_nodo___local_8h_a46393f6371f03b56498cc7623bb56eea}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+\_\+\+New@{Node\+Local\+\_\+\+New}}
+\index{Node\+Local\+\_\+\+New@{Node\+Local\+\_\+\+New}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+\_\+\+New(\+Local $\ast$l)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Local}$\ast$ Node\+Local\+\_\+\+New (
+\begin{DoxyParamCaption}
+\item[{{\bf Local} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}\label{_nodo___local_8h_a46393f6371f03b56498cc7623bb56eea}
+
+
+Retorna um Nodo instanciado. 
+
+\hypertarget{_nodo___local_8h_afd91089e31847615bb8dc47fa9d89a27}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+\_\+\+Set\+\_\+\+Prox@{Node\+Local\+\_\+\+Set\+\_\+\+Prox}}
+\index{Node\+Local\+\_\+\+Set\+\_\+\+Prox@{Node\+Local\+\_\+\+Set\+\_\+\+Prox}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+\_\+\+Set\+\_\+\+Prox(\+Node\+Local $\ast$nl, Node\+Local $\ast$prox)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Local\+\_\+\+Set\+\_\+\+Prox (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Local} $\ast$}]{nl, }
+\item[{{\bf Node\+Local} $\ast$}]{prox}
+\end{DoxyParamCaption}
+)}\label{_nodo___local_8h_afd91089e31847615bb8dc47fa9d89a27}
+
+
+Atribui um nodo ao campo proximo de nl. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nl} & nodo a ser atribuido o proximo. \\
+\hline
+{\em prox} & nodo que sera o proximo. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_nodo___local_8h_a5953dbc0959018723842eb2b6cb96753}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+\_\+\+Vector\+\_\+\+Add@{Node\+Local\+\_\+\+Vector\+\_\+\+Add}}
+\index{Node\+Local\+\_\+\+Vector\+\_\+\+Add@{Node\+Local\+\_\+\+Vector\+\_\+\+Add}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+\_\+\+Vector\+\_\+\+Add(\+Node\+Local $\ast$nl, Node\+Local\+Vector $\ast$nv)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Local\+\_\+\+Vector\+\_\+\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Local} $\ast$}]{nl, }
+\item[{{\bf Node\+Local\+Vector} $\ast$}]{nv}
+\end{DoxyParamCaption}
+)}\label{_nodo___local_8h_a5953dbc0959018723842eb2b6cb96753}
+
+
+Adiciona um nodo ao vetor nv. 
+
+\hypertarget{_nodo___local_8h_a9d26119def3c77585acaae4b51df33fb}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+\_\+\+Vector\+\_\+\+Del@{Node\+Local\+\_\+\+Vector\+\_\+\+Del}}
+\index{Node\+Local\+\_\+\+Vector\+\_\+\+Del@{Node\+Local\+\_\+\+Vector\+\_\+\+Del}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+\_\+\+Vector\+\_\+\+Del(\+Node\+Local\+Vector $\ast$nlv)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Local\+Vector}$\ast$ Node\+Local\+\_\+\+Vector\+\_\+\+Del (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Local\+Vector} $\ast$}]{nlv}
+\end{DoxyParamCaption}
+)}\label{_nodo___local_8h_a9d26119def3c77585acaae4b51df33fb}
+
+
+Deleta o vetor de nodos. 
+
+\hypertarget{_nodo___local_8h_a2e4b9463e0f3cb0efa7fefa6a88b31f0}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+\_\+\+Vector\+\_\+\+Get@{Node\+Local\+\_\+\+Vector\+\_\+\+Get}}
+\index{Node\+Local\+\_\+\+Vector\+\_\+\+Get@{Node\+Local\+\_\+\+Vector\+\_\+\+Get}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+\_\+\+Vector\+\_\+\+Get(\+Node\+Local\+Vector $\ast$nv, int i)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Local}$\ast$ Node\+Local\+\_\+\+Vector\+\_\+\+Get (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Local\+Vector} $\ast$}]{nv, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{_nodo___local_8h_a2e4b9463e0f3cb0efa7fefa6a88b31f0}
+
+
+Retorna um Nodo dado o vetor e a posicao. 
+
+\hypertarget{_nodo___local_8h_a9ed9c7163fbf93c7e259713a886fef5a}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size@{Node\+Local\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size}}
+\index{Node\+Local\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size@{Node\+Local\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size(\+Node\+Local\+Vector $\ast$nv)}]{\setlength{\rightskip}{0pt plus 5cm}int Node\+Local\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Local\+Vector} $\ast$}]{nv}
+\end{DoxyParamCaption}
+)}\label{_nodo___local_8h_a9ed9c7163fbf93c7e259713a886fef5a}
+
+
+Retorna o tamanho do vetor. 
+
+\hypertarget{_nodo___local_8h_a997e0cfb99c218c9d66126d3558cbafb}{}\index{Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}!Node\+Local\+\_\+\+Vector\+\_\+\+New@{Node\+Local\+\_\+\+Vector\+\_\+\+New}}
+\index{Node\+Local\+\_\+\+Vector\+\_\+\+New@{Node\+Local\+\_\+\+Vector\+\_\+\+New}!Nodo\+\_\+\+Local.\+h@{Nodo\+\_\+\+Local.\+h}}
+\subsubsection[{Node\+Local\+\_\+\+Vector\+\_\+\+New()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Local\+Vector}$\ast$ Node\+Local\+\_\+\+Vector\+\_\+\+New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_nodo___local_8h_a997e0cfb99c218c9d66126d3558cbafb}
+
+
+Retorna um vetor de locais instanciado. 
+

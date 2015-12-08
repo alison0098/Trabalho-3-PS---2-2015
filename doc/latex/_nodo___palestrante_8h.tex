@@ -1,0 +1,153 @@
+\hypertarget{_nodo___palestrante_8h}{}\section{Referência do Arquivo Nodo\+\_\+\+Palestrante.\+h}
+\label{_nodo___palestrante_8h}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+{\ttfamily \#include \char`\"{}Palestrante.\+h\char`\"{}}\\*
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} \hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante}
+\item 
+typedef struct \hyperlink{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{Node\+Palestrante\+Vector} \hyperlink{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{Node\+Palestrante\+Vector}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$ \hyperlink{_nodo___palestrante_8h_a1e9c4b2b90ab6b3c3aa5f90fb1a8add0}{Node\+Palestrante\+\_\+\+New} (\hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Instancia um nodo e atrela o palestrante. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$ \hyperlink{_nodo___palestrante_8h_a5386df8f209d00fa06a740050faa4d5f}{Node\+Palestrante\+\_\+\+Get\+\_\+\+Prox} (\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$np)
+\begin{DoxyCompactList}\small\item\em Retorna o ponteiro para o proximo. \end{DoxyCompactList}\item 
+\hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante} $\ast$ \hyperlink{_nodo___palestrante_8h_a15bb90d7772eb924cb92be0e6ca8a17b}{Node\+Palestrante\+\_\+\+Get} (\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$np)
+\begin{DoxyCompactList}\small\item\em Retorna o ponteiro para palestrante dado um nodo. \end{DoxyCompactList}\item 
+void \hyperlink{_nodo___palestrante_8h_a4164d1dff1b2e8f052f36ea951612359}{Node\+Palestrante\+\_\+\+Set\+\_\+\+Prox} (\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$np, \hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$prox)
+\begin{DoxyCompactList}\small\item\em Estabelece o proximo nodo. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{Node\+Palestrante\+Vector} $\ast$ \hyperlink{_nodo___palestrante_8h_a218a4b5e1a9f962023f1e117ebb8d85c}{Node\+Palestrante\+\_\+\+Vector\+\_\+\+New} ()
+\begin{DoxyCompactList}\small\item\em Retorna um Vetor de nodos. \end{DoxyCompactList}\item 
+void \hyperlink{_nodo___palestrante_8h_a96cfc897532f5108b7cce053624d562e}{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Add} (\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$np, \hyperlink{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{Node\+Palestrante\+Vector} $\ast$nv)
+\begin{DoxyCompactList}\small\item\em Adiciona um nodo ao vetor. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{Node\+Palestrante\+Vector} $\ast$ \hyperlink{_nodo___palestrante_8h_a6d9bd17ee311ed9b9166fa96825d9038}{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Del} (\hyperlink{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{Node\+Palestrante\+Vector} $\ast$npv)
+\begin{DoxyCompactList}\small\item\em Deleta o vetor. \end{DoxyCompactList}\item 
+int \hyperlink{_nodo___palestrante_8h_ad6ebdf33620f2f790b53068fb1510b86}{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size} (\hyperlink{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{Node\+Palestrante\+Vector} $\ast$nv)
+\begin{DoxyCompactList}\small\item\em Retorna o tamanho do vetor. \end{DoxyCompactList}\item 
+\hyperlink{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{Node\+Palestrante} $\ast$ \hyperlink{_nodo___palestrante_8h_a5382e5deb0588da648f0025447bda106}{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get} (\hyperlink{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{Node\+Palestrante\+Vector} $\ast$nv, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o nodo de um vetor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante@{Node\+Palestrante}}
+\index{Node\+Palestrante@{Node\+Palestrante}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Node\+Palestrante} {\bf Node\+Palestrante}}\label{_nodo___palestrante_8h_af0a0d826e44e4273e884bd8cf40bff54}
+\hypertarget{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+Vector@{Node\+Palestrante\+Vector}}
+\index{Node\+Palestrante\+Vector@{Node\+Palestrante\+Vector}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Node\+Palestrante\+Vector} {\bf Node\+Palestrante\+Vector}}\label{_nodo___palestrante_8h_aa0112ba8f2d4b19acf56a69b19425191}
+
+
+\subsection{Funções}
+\hypertarget{_nodo___palestrante_8h_a15bb90d7772eb924cb92be0e6ca8a17b}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+\_\+\+Get@{Node\+Palestrante\+\_\+\+Get}}
+\index{Node\+Palestrante\+\_\+\+Get@{Node\+Palestrante\+\_\+\+Get}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+\_\+\+Get(\+Node\+Palestrante $\ast$np)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Palestrante}$\ast$ Node\+Palestrante\+\_\+\+Get (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Palestrante} $\ast$}]{np}
+\end{DoxyParamCaption}
+)}\label{_nodo___palestrante_8h_a15bb90d7772eb924cb92be0e6ca8a17b}
+
+
+Retorna o ponteiro para palestrante dado um nodo. 
+
+\hypertarget{_nodo___palestrante_8h_a5386df8f209d00fa06a740050faa4d5f}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+\_\+\+Get\+\_\+\+Prox@{Node\+Palestrante\+\_\+\+Get\+\_\+\+Prox}}
+\index{Node\+Palestrante\+\_\+\+Get\+\_\+\+Prox@{Node\+Palestrante\+\_\+\+Get\+\_\+\+Prox}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+\_\+\+Get\+\_\+\+Prox(\+Node\+Palestrante $\ast$np)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Palestrante}$\ast$ Node\+Palestrante\+\_\+\+Get\+\_\+\+Prox (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Palestrante} $\ast$}]{np}
+\end{DoxyParamCaption}
+)}\label{_nodo___palestrante_8h_a5386df8f209d00fa06a740050faa4d5f}
+
+
+Retorna o ponteiro para o proximo. 
+
+\hypertarget{_nodo___palestrante_8h_a1e9c4b2b90ab6b3c3aa5f90fb1a8add0}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+\_\+\+New@{Node\+Palestrante\+\_\+\+New}}
+\index{Node\+Palestrante\+\_\+\+New@{Node\+Palestrante\+\_\+\+New}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+\_\+\+New(\+Palestrante $\ast$p)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Palestrante}$\ast$ Node\+Palestrante\+\_\+\+New (
+\begin{DoxyParamCaption}
+\item[{{\bf Palestrante} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\label{_nodo___palestrante_8h_a1e9c4b2b90ab6b3c3aa5f90fb1a8add0}
+
+
+Instancia um nodo e atrela o palestrante. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em p} & e um ponteiro para a palestrante a ser adicionada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna o ponteiro do nodo inicializado. 
+\end{DoxyReturn}
+\hypertarget{_nodo___palestrante_8h_a4164d1dff1b2e8f052f36ea951612359}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+\_\+\+Set\+\_\+\+Prox@{Node\+Palestrante\+\_\+\+Set\+\_\+\+Prox}}
+\index{Node\+Palestrante\+\_\+\+Set\+\_\+\+Prox@{Node\+Palestrante\+\_\+\+Set\+\_\+\+Prox}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+\_\+\+Set\+\_\+\+Prox(\+Node\+Palestrante $\ast$np, Node\+Palestrante $\ast$prox)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Palestrante\+\_\+\+Set\+\_\+\+Prox (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Palestrante} $\ast$}]{np, }
+\item[{{\bf Node\+Palestrante} $\ast$}]{prox}
+\end{DoxyParamCaption}
+)}\label{_nodo___palestrante_8h_a4164d1dff1b2e8f052f36ea951612359}
+
+
+Estabelece o proximo nodo. 
+
+\hypertarget{_nodo___palestrante_8h_a96cfc897532f5108b7cce053624d562e}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+\_\+\+Vector\+\_\+\+Add@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Add}}
+\index{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Add@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Add}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Add(\+Node\+Palestrante $\ast$np, Node\+Palestrante\+Vector $\ast$nv)}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+Palestrante\+\_\+\+Vector\+\_\+\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Palestrante} $\ast$}]{np, }
+\item[{{\bf Node\+Palestrante\+Vector} $\ast$}]{nv}
+\end{DoxyParamCaption}
+)}\label{_nodo___palestrante_8h_a96cfc897532f5108b7cce053624d562e}
+
+
+Adiciona um nodo ao vetor. 
+
+\hypertarget{_nodo___palestrante_8h_a6d9bd17ee311ed9b9166fa96825d9038}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+\_\+\+Vector\+\_\+\+Del@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Del}}
+\index{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Del@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Del}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Del(\+Node\+Palestrante\+Vector $\ast$npv)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Palestrante\+Vector}$\ast$ Node\+Palestrante\+\_\+\+Vector\+\_\+\+Del (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Palestrante\+Vector} $\ast$}]{npv}
+\end{DoxyParamCaption}
+)}\label{_nodo___palestrante_8h_a6d9bd17ee311ed9b9166fa96825d9038}
+
+
+Deleta o vetor. 
+
+\hypertarget{_nodo___palestrante_8h_a5382e5deb0588da648f0025447bda106}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get}}
+\index{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get(\+Node\+Palestrante\+Vector $\ast$nv, int i)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Palestrante}$\ast$ Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Palestrante\+Vector} $\ast$}]{nv, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{_nodo___palestrante_8h_a5382e5deb0588da648f0025447bda106}
+
+
+Retorna o nodo de um vetor. 
+
+Retorna o nodo de um vetor dado a posicao. \hypertarget{_nodo___palestrante_8h_ad6ebdf33620f2f790b53068fb1510b86}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size}}
+\index{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size(\+Node\+Palestrante\+Vector $\ast$nv)}]{\setlength{\rightskip}{0pt plus 5cm}int Node\+Palestrante\+\_\+\+Vector\+\_\+\+Get\+\_\+\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf Node\+Palestrante\+Vector} $\ast$}]{nv}
+\end{DoxyParamCaption}
+)}\label{_nodo___palestrante_8h_ad6ebdf33620f2f790b53068fb1510b86}
+
+
+Retorna o tamanho do vetor. 
+
+\hypertarget{_nodo___palestrante_8h_a218a4b5e1a9f962023f1e117ebb8d85c}{}\index{Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}!Node\+Palestrante\+\_\+\+Vector\+\_\+\+New@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+New}}
+\index{Node\+Palestrante\+\_\+\+Vector\+\_\+\+New@{Node\+Palestrante\+\_\+\+Vector\+\_\+\+New}!Nodo\+\_\+\+Palestrante.\+h@{Nodo\+\_\+\+Palestrante.\+h}}
+\subsubsection[{Node\+Palestrante\+\_\+\+Vector\+\_\+\+New()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node\+Palestrante\+Vector}$\ast$ Node\+Palestrante\+\_\+\+Vector\+\_\+\+New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_nodo___palestrante_8h_a218a4b5e1a9f962023f1e117ebb8d85c}
+
+
+Retorna um Vetor de nodos. 
+

@@ -1,0 +1,117 @@
+\hypertarget{_calendario___manager_8h}{}\section{Referência do Arquivo Calendario\+\_\+\+Manager.\+h}
+\label{_calendario___manager_8h}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+{\ttfamily \#include \char`\"{}Calendario.\+h\char`\"{}}\\*
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_calendario___manager_8h_a63e0fbab1d6dacdba7d8ae04dc8c33a0}{Calendario\+\_\+\+Manager\+\_\+\+Initialize} ()
+\begin{DoxyCompactList}\small\item\em Inicializa a estrutura de calendario. \end{DoxyCompactList}\item 
+void \hyperlink{_calendario___manager_8h_a91d1712159612bc2402a98af6a691e1f}{Calendario\+\_\+\+Manager\+\_\+\+Add} (\hyperlink{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}{Calendario} $\ast$cal)
+\begin{DoxyCompactList}\small\item\em Adiciona um Calendario$\ast$ a estrutura. \end{DoxyCompactList}\item 
+void \hyperlink{_calendario___manager_8h_aea4aaf4c755cac4fea86fef2d73d2e9d}{Calendario\+\_\+\+Manager\+\_\+\+Print} ()
+\begin{DoxyCompactList}\small\item\em Escreve um arquivo feito os devidos processamentos. \end{DoxyCompactList}\item 
+void \hyperlink{_calendario___manager_8h_a6c931d530ad96e9186dae8d1666609b4}{Calendario\+\_\+\+Manager\+\_\+\+Delete} ()
+\item 
+void \hyperlink{_calendario___manager_8h_aed4c330b672530a0f1c6db1933a055dc}{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Day} (int dia)
+\begin{DoxyCompactList}\small\item\em Escreve uma lista de palestras dado um dia. \end{DoxyCompactList}\item 
+void \hyperlink{_calendario___manager_8h_a665c5be5189038051393ca01a7e3b9c7}{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Month} (int mes)
+\begin{DoxyCompactList}\small\item\em Escreve uma lista de palestras dado um mes. \end{DoxyCompactList}\item 
+void \hyperlink{_calendario___manager_8h_ae3cacfd0a1fad146dce9c2582bcce956}{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Year} (int ano)
+\begin{DoxyCompactList}\small\item\em Escreve uma lista de palestras dado um ano. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}{Calendario} $\ast$$\ast$ \hyperlink{_calendario___manager_8h_a56a476157bb3bf0b62d09683fb0d86c8}{calendario}
+\item 
+static int \hyperlink{_calendario___manager_8h_ada7da6aee3ee2471768c9dfaf101f0db}{Calendario\+\_\+\+Vector\+\_\+\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Funções}
+\hypertarget{_calendario___manager_8h_a91d1712159612bc2402a98af6a691e1f}{}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}!Calendario\+\_\+\+Manager\+\_\+\+Add@{Calendario\+\_\+\+Manager\+\_\+\+Add}}
+\index{Calendario\+\_\+\+Manager\+\_\+\+Add@{Calendario\+\_\+\+Manager\+\_\+\+Add}!Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+\subsubsection[{Calendario\+\_\+\+Manager\+\_\+\+Add(\+Calendario $\ast$cal)}]{\setlength{\rightskip}{0pt plus 5cm}void Calendario\+\_\+\+Manager\+\_\+\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Calendario} $\ast$}]{cal}
+\end{DoxyParamCaption}
+)}\label{_calendario___manager_8h_a91d1712159612bc2402a98af6a691e1f}
+
+
+Adiciona um Calendario$\ast$ a estrutura. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em cal} & estrutura a ser adicionada. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_calendario___manager_8h_a6c931d530ad96e9186dae8d1666609b4}{}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}!Calendario\+\_\+\+Manager\+\_\+\+Delete@{Calendario\+\_\+\+Manager\+\_\+\+Delete}}
+\index{Calendario\+\_\+\+Manager\+\_\+\+Delete@{Calendario\+\_\+\+Manager\+\_\+\+Delete}!Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+\subsubsection[{Calendario\+\_\+\+Manager\+\_\+\+Delete()}]{\setlength{\rightskip}{0pt plus 5cm}void Calendario\+\_\+\+Manager\+\_\+\+Delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_calendario___manager_8h_a6c931d530ad96e9186dae8d1666609b4}
+\hypertarget{_calendario___manager_8h_a63e0fbab1d6dacdba7d8ae04dc8c33a0}{}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}!Calendario\+\_\+\+Manager\+\_\+\+Initialize@{Calendario\+\_\+\+Manager\+\_\+\+Initialize}}
+\index{Calendario\+\_\+\+Manager\+\_\+\+Initialize@{Calendario\+\_\+\+Manager\+\_\+\+Initialize}!Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+\subsubsection[{Calendario\+\_\+\+Manager\+\_\+\+Initialize()}]{\setlength{\rightskip}{0pt plus 5cm}void Calendario\+\_\+\+Manager\+\_\+\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_calendario___manager_8h_a63e0fbab1d6dacdba7d8ae04dc8c33a0}
+
+
+Inicializa a estrutura de calendario. 
+
+\hypertarget{_calendario___manager_8h_aea4aaf4c755cac4fea86fef2d73d2e9d}{}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}!Calendario\+\_\+\+Manager\+\_\+\+Print@{Calendario\+\_\+\+Manager\+\_\+\+Print}}
+\index{Calendario\+\_\+\+Manager\+\_\+\+Print@{Calendario\+\_\+\+Manager\+\_\+\+Print}!Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+\subsubsection[{Calendario\+\_\+\+Manager\+\_\+\+Print()}]{\setlength{\rightskip}{0pt plus 5cm}void Calendario\+\_\+\+Manager\+\_\+\+Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_calendario___manager_8h_aea4aaf4c755cac4fea86fef2d73d2e9d}
+
+
+Escreve um arquivo feito os devidos processamentos. 
+
+\hypertarget{_calendario___manager_8h_aed4c330b672530a0f1c6db1933a055dc}{}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}!Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Day@{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Day}}
+\index{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Day@{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Day}!Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+\subsubsection[{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Day(int dia)}]{\setlength{\rightskip}{0pt plus 5cm}void Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Day (
+\begin{DoxyParamCaption}
+\item[{int}]{dia}
+\end{DoxyParamCaption}
+)}\label{_calendario___manager_8h_aed4c330b672530a0f1c6db1933a055dc}
+
+
+Escreve uma lista de palestras dado um dia. 
+
+\hypertarget{_calendario___manager_8h_a665c5be5189038051393ca01a7e3b9c7}{}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}!Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Month@{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Month}}
+\index{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Month@{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Month}!Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+\subsubsection[{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Month(int mes)}]{\setlength{\rightskip}{0pt plus 5cm}void Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Month (
+\begin{DoxyParamCaption}
+\item[{int}]{mes}
+\end{DoxyParamCaption}
+)}\label{_calendario___manager_8h_a665c5be5189038051393ca01a7e3b9c7}
+
+
+Escreve uma lista de palestras dado um mes. 
+
+\hypertarget{_calendario___manager_8h_ae3cacfd0a1fad146dce9c2582bcce956}{}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}!Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Year@{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Year}}
+\index{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Year@{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Year}!Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+\subsubsection[{Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Year(int ano)}]{\setlength{\rightskip}{0pt plus 5cm}void Calendario\+\_\+\+Manager\+\_\+\+Search\+\_\+\+By\+\_\+\+Year (
+\begin{DoxyParamCaption}
+\item[{int}]{ano}
+\end{DoxyParamCaption}
+)}\label{_calendario___manager_8h_ae3cacfd0a1fad146dce9c2582bcce956}
+
+
+Escreve uma lista de palestras dado um ano. 
+
+
+
+\subsection{Variáveis}
+\hypertarget{_calendario___manager_8h_a56a476157bb3bf0b62d09683fb0d86c8}{}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}!calendario@{calendario}}
+\index{calendario@{calendario}!Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+\subsubsection[{calendario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Calendario}$\ast$$\ast$ calendario\hspace{0.3cm}{\ttfamily [static]}}\label{_calendario___manager_8h_a56a476157bb3bf0b62d09683fb0d86c8}
+\hypertarget{_calendario___manager_8h_ada7da6aee3ee2471768c9dfaf101f0db}{}\index{Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}!Calendario\+\_\+\+Vector\+\_\+\+Size@{Calendario\+\_\+\+Vector\+\_\+\+Size}}
+\index{Calendario\+\_\+\+Vector\+\_\+\+Size@{Calendario\+\_\+\+Vector\+\_\+\+Size}!Calendario\+\_\+\+Manager.\+h@{Calendario\+\_\+\+Manager.\+h}}
+\subsubsection[{Calendario\+\_\+\+Vector\+\_\+\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int Calendario\+\_\+\+Vector\+\_\+\+Size\hspace{0.3cm}{\ttfamily [static]}}\label{_calendario___manager_8h_ada7da6aee3ee2471768c9dfaf101f0db}

@@ -1,0 +1,96 @@
+\hypertarget{_calendario_8h}{}\section{Referência do Arquivo Calendario.\+h}
+\label{_calendario_8h}\index{Calendario.\+h@{Calendario.\+h}}
+{\ttfamily \#include \char`\"{}Local.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Palestra.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Palestrante.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Disponibilidade.\+h\char`\"{}}\\*
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}{Calendario} \hyperlink{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}{Calendario}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$ \hyperlink{_calendario_8h_ae1b17626eb950f584dec141b15f10b37}{Calendario\+\_\+\+Get\+\_\+\+Local} (\hyperlink{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}{Calendario} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Retorno do local a partir de um Calendario. \end{DoxyCompactList}\item 
+\hyperlink{_palestra_8h_a0b24b4acbf19257b20a67477d69fb99b}{Palestra} $\ast$ \hyperlink{_calendario_8h_a918a8b2d442c1d11cb389502f5ac0237}{Calendario\+\_\+\+Get\+\_\+\+Palestra} (\hyperlink{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}{Calendario} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Retorno da struct Palestra. \end{DoxyCompactList}\item 
+\hyperlink{_disponibilidade_8h_af92f013b1928213088c2cd8ca3864596}{Disponibilidade} $\ast$ \hyperlink{_calendario_8h_a4d0572ae89402eec3f7310c3a0ccfd39}{Calendario\+\_\+\+Get\+\_\+\+Disponibilidade} (\hyperlink{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}{Calendario} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Retorno da referencia a struct Disponibilidade. \end{DoxyCompactList}\item 
+\hyperlink{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}{Calendario} $\ast$ \hyperlink{_calendario_8h_a65a37959ccdc5c98d7247dcb1ec0afb4}{Calendario\+\_\+\+New} (\hyperlink{_local_8h_a23473a9197a21b4e1b4c71e229c28a6a}{Local} $\ast$l, \hyperlink{_palestra_8h_a0b24b4acbf19257b20a67477d69fb99b}{Palestra} $\ast$p, \hyperlink{_disponibilidade_8h_af92f013b1928213088c2cd8ca3864596}{Disponibilidade} $\ast$disp, \hyperlink{_palestrante_8h_a438b755b3057d8049ba006d05b4de47d}{Palestrante} $\ast$palestrante)
+\begin{DoxyCompactList}\small\item\em Retorna um ponteiro para o novo calendario inicializado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}{}\index{Calendario.\+h@{Calendario.\+h}!Calendario@{Calendario}}
+\index{Calendario@{Calendario}!Calendario.\+h@{Calendario.\+h}}
+\subsubsection[{Calendario}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Calendario} {\bf Calendario}}\label{_calendario_8h_a1d654b8d838be9c3325ae60139354d74}
+
+
+\subsection{Funções}
+\hypertarget{_calendario_8h_a4d0572ae89402eec3f7310c3a0ccfd39}{}\index{Calendario.\+h@{Calendario.\+h}!Calendario\+\_\+\+Get\+\_\+\+Disponibilidade@{Calendario\+\_\+\+Get\+\_\+\+Disponibilidade}}
+\index{Calendario\+\_\+\+Get\+\_\+\+Disponibilidade@{Calendario\+\_\+\+Get\+\_\+\+Disponibilidade}!Calendario.\+h@{Calendario.\+h}}
+\subsubsection[{Calendario\+\_\+\+Get\+\_\+\+Disponibilidade(\+Calendario $\ast$c)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Disponibilidade}$\ast$ Calendario\+\_\+\+Get\+\_\+\+Disponibilidade (
+\begin{DoxyParamCaption}
+\item[{{\bf Calendario} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\label{_calendario_8h_a4d0572ae89402eec3f7310c3a0ccfd39}
+
+
+Retorno da referencia a struct Disponibilidade. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em c} & Referencia a struct Calendario. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_calendario_8h_ae1b17626eb950f584dec141b15f10b37}{}\index{Calendario.\+h@{Calendario.\+h}!Calendario\+\_\+\+Get\+\_\+\+Local@{Calendario\+\_\+\+Get\+\_\+\+Local}}
+\index{Calendario\+\_\+\+Get\+\_\+\+Local@{Calendario\+\_\+\+Get\+\_\+\+Local}!Calendario.\+h@{Calendario.\+h}}
+\subsubsection[{Calendario\+\_\+\+Get\+\_\+\+Local(\+Calendario $\ast$c)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Local}$\ast$ Calendario\+\_\+\+Get\+\_\+\+Local (
+\begin{DoxyParamCaption}
+\item[{{\bf Calendario} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\label{_calendario_8h_ae1b17626eb950f584dec141b15f10b37}
+
+
+Retorno do local a partir de um Calendario. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em c} & Referencia a struct Calendario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna a referencia ao strcut Local. 
+\end{DoxyReturn}
+\hypertarget{_calendario_8h_a918a8b2d442c1d11cb389502f5ac0237}{}\index{Calendario.\+h@{Calendario.\+h}!Calendario\+\_\+\+Get\+\_\+\+Palestra@{Calendario\+\_\+\+Get\+\_\+\+Palestra}}
+\index{Calendario\+\_\+\+Get\+\_\+\+Palestra@{Calendario\+\_\+\+Get\+\_\+\+Palestra}!Calendario.\+h@{Calendario.\+h}}
+\subsubsection[{Calendario\+\_\+\+Get\+\_\+\+Palestra(\+Calendario $\ast$c)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Palestra}$\ast$ Calendario\+\_\+\+Get\+\_\+\+Palestra (
+\begin{DoxyParamCaption}
+\item[{{\bf Calendario} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\label{_calendario_8h_a918a8b2d442c1d11cb389502f5ac0237}
+
+
+Retorno da struct Palestra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em c} & Referencia a struct Calendario. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_calendario_8h_a65a37959ccdc5c98d7247dcb1ec0afb4}{}\index{Calendario.\+h@{Calendario.\+h}!Calendario\+\_\+\+New@{Calendario\+\_\+\+New}}
+\index{Calendario\+\_\+\+New@{Calendario\+\_\+\+New}!Calendario.\+h@{Calendario.\+h}}
+\subsubsection[{Calendario\+\_\+\+New(\+Local $\ast$l, Palestra $\ast$p, Disponibilidade $\ast$disp, Palestrante $\ast$palestrante)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Calendario}$\ast$ Calendario\+\_\+\+New (
+\begin{DoxyParamCaption}
+\item[{{\bf Local} $\ast$}]{l, }
+\item[{{\bf Palestra} $\ast$}]{p, }
+\item[{{\bf Disponibilidade} $\ast$}]{disp, }
+\item[{{\bf Palestrante} $\ast$}]{palestrante}
+\end{DoxyParamCaption}
+)}\label{_calendario_8h_a65a37959ccdc5c98d7247dcb1ec0afb4}
+
+
+Retorna um ponteiro para o novo calendario inicializado. 
+
