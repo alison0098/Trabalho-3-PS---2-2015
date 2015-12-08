@@ -12,6 +12,9 @@ typedef struct Disponibilidade Disponibilidade;
 
 char* Disponibilidade_Get_Data(Disponibilidade* disp);
 char* Disponibilidade_Get_Dia_Semana(Disponibilidade* disp);
+int Disponibilidade_Get_Dia(Disponibilidade* disp);
+int Disponibilidade_Get_Mes(Disponibilidade* disp);
+int Disponibilidade_Get_Ano(Disponibilidade* disp);
 char Disponibilidade_Get_Hora(Disponibilidade* disp);
 char Disponibilidade_Get_Minuto(Disponibilidade* disp);
 char Disponibilidade_Get_HoraFim(Disponibilidade* disp);
