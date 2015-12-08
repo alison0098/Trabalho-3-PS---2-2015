@@ -13,33 +13,24 @@ Sources/Calendario.c: (in function Calendario_Get_Disponibilidade)
 Sources/Calendario.c:27:17: Storage *c reachable from parameter contains 1
                                undefined field: disp
 Sources/Calendario.c: (in function Calendario_Get_Palestrante)
-Sources/Calendario.c:30:24: Storage *c reachable from parameter contains 1
+Sources/Calendario.c:31:24: Storage *c reachable from parameter contains 1
                                undefined field: palestrante
-Sources/Calendario_Manager.c: (in function Calendario_Manager_Print)
-Sources/Calendario_Manager.c:124:8: No argument corresponding to fprintf format
-                                       code 3 (%d): "Mes %d//%d\n"
-  Types are incompatible. (Use -type to inhibit warning)
-   Sources/Calendario_Manager.c:124:39: Corresponding format code
-Sources/Calendario_Manager.c:93:6: Variable size declared but not used
-  A variable is declared but never used. Use /*@unused@*/ in front of
-  declaration to suppress message. (Use -varuse to inhibit warning)
-Sources/Calendario_Manager.c:95:7: Variable data declared but not used
-Sources/Disponibilidade.c:19:3: Datatype Disponibilidade defined more than once
+Sources/Disponibilidade.c:20:3: Datatype Disponibilidade defined more than once
   A function or variable is redefined. One of the declarations should use
   extern. (Use -redef to inhibit warning)
    Headers/Disponibilidade.h:11:32: Previous definition of Disponibilidade
 Sources/Disponibilidade.c: (in function Disp_Comp)
-Sources/Disponibilidade.c:23:2: Buffer overflow possible with sprintf. 
+Sources/Disponibilidade.c:24:2: Buffer overflow possible with sprintf. 
                                    Recommend using snprintf instead: sprintf
   Use of function that may lead to buffer overflow. (Use -bufferoverflowhigh to
   inhibit warning)
-Sources/Disponibilidade.c:24:2: Buffer overflow possible with sprintf. 
+Sources/Disponibilidade.c:25:2: Buffer overflow possible with sprintf. 
                                    Recommend using snprintf instead: sprintf
 Sources/Disponibilidade.c: (in function Disponibilidade_Get_Data)
-Sources/Disponibilidade.c:29:20: Storage *disp reachable from parameter
+Sources/Disponibilidade.c:30:20: Storage *disp reachable from parameter
                                     contains 1 undefined field: data
 Sources/Disponibilidade.c: (in function Disponibilidade_Get_Dia_Semana)
-Sources/Disponibilidade.c:33:18: Storage *disp reachable from parameter
+Sources/Disponibilidade.c:34:18: Storage *disp reachable from parameter
                                     contains 1 undefined field: ds
 Sources/Fila_Local.c: (in function FilaLocal_Get)
 Sources/Fila_Local.c:82:13: Storage *fp reachable from parameter contains 1
@@ -62,16 +53,16 @@ Sources/Fila_Palestra.c: (in function FilaPalestra_Get_With_Palestrante)
 Sources/Fila_Palestra.c:107:13: Storage *fp reachable from parameter contains 1
                                    undefined field: first
 Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get)
-Sources/Fila_Palestrante.c:83:13: Storage *fp reachable from parameter contains
+Sources/Fila_Palestrante.c:84:13: Storage *fp reachable from parameter contains
                                      1 undefined field: first
 Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get_With_Disp)
-Sources/Fila_Palestrante.c:107:14: Storage *fp reachable from parameter
+Sources/Fila_Palestrante.c:108:14: Storage *fp reachable from parameter
                                       contains 1 undefined field: first
 Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get_First)
-Sources/Fila_Palestrante.c:113:18: Storage *f reachable from parameter contains
+Sources/Fila_Palestrante.c:114:18: Storage *f reachable from parameter contains
                                       1 undefined field: first
 Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get_Last)
-Sources/Fila_Palestrante.c:117:17: Storage *f reachable from parameter contains
+Sources/Fila_Palestrante.c:118:17: Storage *f reachable from parameter contains
                                       1 undefined field: last
 Sources/Local.c:17:2: Datatype Local defined more than once
    Headers/Local.h:12:22: Previous definition of Local
@@ -88,6 +79,8 @@ Sources/Local.c:59:17: Storage *l reachable from parameter contains 1 undefined
                           field: disp
 Headers/Palestra_Manager.h:14:22: File static variable filaPalestra declared
                                      but not used
+  A variable is declared but never used. Use /*@unused@*/ in front of
+  declaration to suppress message. (Use -varuse to inhibit warning)
 Headers/Palestrante_Manager.h:13:25: File static variable filaPalestrante
                                         declared but not used
 Headers/Local_Manager.h:13:19: File static variable filaLocal declared but not
@@ -125,8 +118,16 @@ Sources/Nodo_Palestrante.c: (in function NodePalestrante_Get)
 Sources/Nodo_Palestrante.c:84:25: Storage *np reachable from parameter contains
                                      1 undefined field: Palestrante
 Sources/Organizer.c: (in function Organizer_Organize_Filas)
-Sources/Organizer.c:69:4: Buffer overflow possible with sprintf.  Recommend
+Sources/Organizer.c:70:8: Buffer overflow possible with sprintf.  Recommend
                              using snprintf instead: sprintf
+Sources/Organizer.c:72:5: Buffer overflow possible with sprintf.  Recommend
+                             using snprintf instead: sprintf
+Sources/Organizer.c:74:5: Buffer overflow possible with sprintf.  Recommend
+                             using snprintf instead: sprintf
+Sources/Organizer.c:76:5: Buffer overflow possible with sprintf.  Recommend
+                             using snprintf instead: sprintf
+Sources/Organizer.c:83:69: Passed storage data not completely defined (*data is
+                              undefined): Disponibilidade_New (data, ...)
 Sources/Palestra.c:17:3: Datatype Palestra defined more than once
    Headers/Palestra.h:4:25: Previous definition of Palestra
 Sources/Palestra.c: (in function Palestra_Get_Nome)
@@ -156,4 +157,4 @@ Sources/Palestrante.c: (in function Palestrante_New)
 Sources/Palestrante.c:34:9: Returned storage *aux contains 1 undefined field:
                                disp
 
-Finished checking --- 53 code warnings
+Finished checking --- 54 code warnings
