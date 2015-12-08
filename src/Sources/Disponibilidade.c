@@ -9,6 +9,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <time.h>
+#include "../Headers/Disponibilidade.h"
 
 typedef struct Disponibilidade{
 	char data[14];
@@ -65,10 +66,25 @@ int Disponibilidade_Get_Dur(Disponibilidade* disp){
 	return (disp->hora_fim*60 + disp->minuto_fim) - (disp->hora*60 + disp->minuto);
 }
 
-int GetWeekDay(int y, int m, int d){
-	int t[] = {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
-	y -= m < 3;
-	return (y + y/4 - y/100 + y/400 + t[m-1] + d) % 7;
+int Disponibilidade_Get_Dia(Disponibilidade* disp){
+	int i = atoi(disp->data);
+	return i;
+}
+
+int Disponibilidade_Get_Mes(Disponibilidade* disp){
+	int i = atoi(&disp->data[3]);
+	return i;
+}
+
+int Disponibilidade_Get_Ano(Disponibilidade* disp){
+	int i = atoi(&disp->data[6]);
+	return i;
+}
+
+int GetWeekDay(int ano, int mes, int dia){
+	int aux[] = {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
+	ano -= mes < 3;
+	return (ano + ano/4 - ano/100 + ano/400 + aux[mes-1] + dia) % 7;
 }
 
 Disponibilidade* Disponibilidade_New(char* data, char* ds, char hora, char minuto, char horaf, char minf){

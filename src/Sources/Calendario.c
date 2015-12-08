@@ -26,6 +26,7 @@ Palestra* Calendario_Get_Palestra(Calendario* c){
 Disponibilidade* Calendario_Get_Disponibilidade(Calendario* c){
 	return c->disp;
 }
+
 Palestrante* Calendario_Get_Palestrante(Calendario* c){
 	return c->palestrante;
 }

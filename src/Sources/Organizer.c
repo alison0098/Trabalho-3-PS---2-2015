@@ -66,7 +66,15 @@ void Organizer_Organize_Filas(FilaLocal* flocal, FilaPalestra* fpalestra, FilaPa
 			}
 		}
 		if(check){
-			sprintf(data, "%d/%d/%d", dia, mes, ano);
+			if(dia < 10 && mes < 10)
+			    sprintf(data, "0%d/0%d/%d", dia, mes, ano);
+			if(dia < 10 && mes >= 10)
+				sprintf(data, "0%d/%d/%d", dia, mes, ano);
+			if(dia >= 10 && mes < 10)
+				sprintf(data, "%d/0%d/%d", dia, mes, ano);
+			if(dia >= 10 && mes >= 10)
+				sprintf(data, "%d/%d/%d", dia, mes, ano);
+
 			hora = Disponibilidade_Get_Hora(disp[j]);
 			minuto = Disponibilidade_Get_Minuto(disp[j]);
 			horaf = Disponibilidade_Get_HoraFim(disp[j]);
