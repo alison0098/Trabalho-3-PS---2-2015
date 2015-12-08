@@ -7,7 +7,7 @@
 #include "CUnit/CUnit.h"
 #include "CUnit/Basic.h"
 
-void adicionar_testes_smo_datas(void);
+void adicionar_testes_Local(void);
 
 /*Abaixo esta a funçao que efetua os testes para a função Local_New*/
 void teste_DT_Local_New_NULL(void);
@@ -20,11 +20,11 @@ void teste_DT_Local_New_NULL(void){
     CU_ASSERT_PTR_NOT_NULL(aux);
 }
 
-void  adicionar_testes_smo_datas(void){
+void adicionar_testes_Local(void){
 	CU_pSuite suite;
 
 	/*Cria uma suite que conterá todos os testes*/
-	suite = CU_add_suite("Testes da smo_datas Local.c",NULL,NULL);
+	suite = CU_add_suite("Testes do Local.c",NULL,NULL);
 
 
 	/*Adiciona os testes para a função DT_data_valida*/
@@ -38,7 +38,7 @@ int main(void){
     	return CU_get_error();
 
     /*Adiciona os testes ao registro*/
-   	adicionar_testes_smo_datas();
+   	adicionar_testes_Local();
 	/*Muda o modo do CUnit para o modo VERBOSE
 	 O modo VERBOSE mostra algumas informacoes a
 	 mais na hora da execucao*/
