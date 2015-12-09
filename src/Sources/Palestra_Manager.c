@@ -117,7 +117,8 @@ int PalestraManager_Read(char* filename){
 
 
 int PalestraManager_PopFila(){
-	filaPalestra = FilaPalestra_Pop(filaPalestra);
+	if(filaPalestra != NULL)
+	    filaPalestra = FilaPalestra_Pop(filaPalestra);
 
 	return filaPalestra == NULL;
 }
