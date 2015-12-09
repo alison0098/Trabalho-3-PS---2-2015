@@ -14,7 +14,7 @@ static FilaLocal* filaLocal;
 /**
  * Le arquivo e cria a lista de locais.
  */
-void LocalManager_Read(char* filename);
+int LocalManager_Read(char* filename);
 /**
  * Destroi fila.
  */

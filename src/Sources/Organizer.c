@@ -55,6 +55,7 @@ void Organizer_Organize_Filas(FilaLocal* flocal, FilaPalestra* fpalestra, FilaPa
 				ano = atoi(&Disponibilidade_Get_Data(disp[j])[6]);
 
 				if(dia == 0){
+					printf("Arrumando o dia \n\n");
 					while(GetWeekDay(ano, mes, dia) != Disponibilidade_Get_Dia_Semana_Int(disp[j])){
 						dia++;
 					}

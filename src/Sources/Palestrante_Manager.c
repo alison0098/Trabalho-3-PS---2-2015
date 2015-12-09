@@ -14,7 +14,7 @@ void PalestranteManager_Initialize(){
 	    filaPalestrante = FilaPalestrante_New();
 }
 
-void PalestranteManager_Read(char* filename){
+int PalestranteManager_Read(char* filename){
 	char nome[30];
 	char data[13];
 	char d_sem[6];
@@ -24,7 +24,10 @@ void PalestranteManager_Read(char* filename){
 
 	FILE *file;
 
-	file = fopen(filename, "r");
+	if(Check_File(filename))
+		file = fopen(filename, "r");
+	else
+		return 1;
 
 	PalestranteManager_Initialize();
 
@@ -35,10 +38,11 @@ void PalestranteManager_Read(char* filename){
 		c = fgetc(file);
 		i = 0;
 		while(c != '.'){
-			if(c != ' '){
+			if(c != ' ' && Check_char(c, filename)){
 			    nome[i] = c;
 			    i++;
-			}
+			}else if (c != ' ' && !Check_char(c, filename))
+				return 2;
 			c = fgetc(file);
 		}
 		nome[i] = 0;
@@ -57,10 +61,11 @@ void PalestranteManager_Read(char* filename){
         		i = 0;
         		c = fgetc(file);
         		while(c != ','){
-        			if(c != ' '){
+        			if(c != ' ' && c != ' ' && Check_char(c, filename)){
         			    d_sem[i] = c;
         			    i++;
-        			}
+        			}else if (c != ' ' && !Check_char(c, filename))
+        				return 3;
         			c = fgetc(file);
         		}
         		d_sem[i] = 0;
@@ -92,10 +97,11 @@ void PalestranteManager_Read(char* filename){
         		i = 0;
         		c = fgetc(file);
         		while(c != ','){
-        			if(c != ' '){
+        			if(c != ' ' && Check_Date(c, filename)){
         			    data[i] = c;
         			    i++;
-        			}
+        			}else if(c != ' ' && !Check_Date(c, filename))
+        				return 4;
         			c = fgetc(file);
         		}
         		data[i] = 0;
@@ -103,22 +109,31 @@ void PalestranteManager_Read(char* filename){
         		i = 0;
         		c = fgetc(file);
         		while(c != '-'){
-        			hinicio[i] = c;
+        			if(Check_Time(c, filename)){
+        			    hinicio[i] = c;
+        			    i++;
+        			}else if(!Check_Time(c, filename)){
+        				return 5;
+        			}
         			c = fgetc(file);
-        			i++;
+
         		}
         		hinicio[i] = 0;
 
         		i = 0;
         		do{
         			c = fgetc(file);
-        			hfim[i] = c;
-        			i++;
+        			if(Check_Date(c, filename) || c ==';' || c == '.'){
+        			    hfim[i] = c;
+        			    i++;
+        			}else if(!Check_Date(c, filename) && ((c != ';' ) || (c != '.')))
+		        		return 6;
         		}while(c != ';' && c != '.');
 
         		hfim[i] = 0;
 
         		hora = atoi(&hinicio[0]);
+
         		minuto = atoi(&hinicio[3]);
         		horafim = atoi(&hfim[0]);
         		minutofim = atoi(&hfim[3]);

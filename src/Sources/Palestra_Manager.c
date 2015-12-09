@@ -5,8 +5,9 @@
  *      Author: Guilherme
  */
 
-#include "../Headers/Palestra_Manager.h"
+#include "../Headers/Palestra_manager.h"
 #include "../Headers/Fila_Palestra.h"
+#include "../Headers/Checker.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -19,7 +20,7 @@ FilaPalestra* PalestraManager_Get(){
 	return filaPalestra;
 }
 
-void PalestraManager_Read(char* filename){
+int PalestraManager_Read(char* filename){
 	char nome[50];
 	char palestrante[50];
 	char local[25];
@@ -29,9 +30,10 @@ void PalestraManager_Read(char* filename){
 	int dur_min = 0, i;
 	FILE *file;
 
-	file = fopen(filename, "r");
-	if(file == NULL)
-		return;
+	if(Check_File(filename))
+		file = fopen(filename, "r");
+	else
+		return 1;
 
 	PalestraManager_Initialize();
 
@@ -43,10 +45,12 @@ void PalestraManager_Read(char* filename){
 		i = 0;
 
 		while(c != '.'){
- 			if(c != ' '){
-				nome[i] = c;
-				i++;
-			}
+			if(Check_char(c, filename)){
+			    nome[i] = c;
+			    i++;
+			}else
+				return 2;
+
 			c = fgetc(file);
 		}
 		nome[i] = 0;
@@ -57,12 +61,11 @@ void PalestraManager_Read(char* filename){
 		i = 0;
 		c = fgetc(file);
 		while(c != '.'){
-
- 			if(c != ' '){
+			if(Check_char(c, filename)){
 				palestrante[i] = c;
 				i++;
-			}
-		    
+			}else
+				return 3;
 		    c = fgetc(file);
 		}
 		palestrante[i] = 0;
@@ -73,9 +76,12 @@ void PalestraManager_Read(char* filename){
 		i = 0;
 		c = fgetc(file);
 		while(c != '.'){
-			tema[i] = c;
+			if(Check_char(c, filename)){
+				tema[i] = c;
+				i++;
+			}else
+				return 4;
 			c = fgetc(file);
-			i++;
 		}
 		tema[i] = 0;
 
@@ -85,9 +91,11 @@ void PalestraManager_Read(char* filename){
 		i = 0;
 		c = fgetc(file);
 		while(c != '.'){
-			local[i] = c;
+			if(Check_char(c, filename)){
+				local[i] = c;
+				i++;
+			}
 			c = fgetc(file);
-			i++;
 		}
 
 		local[i] = 0;
@@ -97,12 +105,13 @@ void PalestraManager_Read(char* filename){
 		fgets(dur, 25, file);
 		fscanf(file, "%c", &c);
 
-		dur_min = (60*atoi(&dur[1])) + atoi(&dur[4]);
+		dur_min = (60*atoi(&dur[0])) + atoi(&dur[3]);
 
 		FilaPalestra_Add(NodePalestra_New(Palestra_New(nome, palestrante, local, tema, dur_min)), filaPalestra);
 	}
 
 	fclose(file);
+	return 0;
 }
 
 
