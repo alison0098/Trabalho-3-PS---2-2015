@@ -48,18 +48,18 @@ int main(){
 						scanf("%d", &valor);
 						Calendario_Manager_Search_By_Year(valor);
 						break;
-					}
-				}
-
-			}
+					}//switch
+				}//while
+			}//if palestrante
 			PalestranteManager_PopFila();
 		    Calendario_Manager_Delete();
-		}
+		}//if local
 		LocalManager_PopFila();
-    }
+    }//if palestra
     PalestraManager_PopFila();
 
-
+    printf("Pressione qualquer tecla para finalizar\n");
+    getchar();
 
 	return 0;
 }

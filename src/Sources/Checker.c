@@ -5,7 +5,7 @@
  *      Author: Okita
  */
 
-#include "../Headers/Checker.h"]
+#include "../Headers/Checker.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,7 +32,13 @@ int Check_File(char* filename){
 	char file[100] = "Log_";
 	FILE *arq;
 
-	arq = fopen(filename, "r");
+	arq = fopen(filename, "r+");
+
+	if(arq == NULL){
+		printf("Arquivo %s nao existe!\n", filename);
+		return 0;
+	}
+
 	if(!feof(arq)){
 		fclose(arq);
 		return 1;

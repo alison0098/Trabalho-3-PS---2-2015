@@ -140,8 +140,10 @@ void Calendario_Manager_Print(){
 }
 
 void Calendario_Manager_Delete(){
-	fclose(arquivo_bom);
-	free(calendario);
+	if(calendario != NULL)
+	    free(calendario);
+	if(vetor_acertado != NULL)
+	    free(vetor_acertado);
 }
 
 void Calendario_Manager_Search_By_Day(int dia){

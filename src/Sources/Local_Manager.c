@@ -162,7 +162,8 @@ int LocalManager_Read(char* filename){
 }
 
 int LocalManager_PopFila(){
-	filaLocal = FilaLocal_Pop(filaLocal);
+	if(filaLocal != NULL)
+	    filaLocal = FilaLocal_Pop(filaLocal);
 
 	return filaLocal == NULL;
 }
