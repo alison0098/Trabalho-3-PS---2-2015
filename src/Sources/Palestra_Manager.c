@@ -48,9 +48,9 @@ int PalestraManager_Read(char* filename){
 			if(Check_char(c, filename)){
 			    nome[i] = c;
 			    i++;
-			}else
+			}/*else
 				return 2;
-
+*/
 			c = fgetc(file);
 		}
 		nome[i] = 0;
@@ -64,8 +64,8 @@ int PalestraManager_Read(char* filename){
 			if(Check_char(c, filename)){
 				palestrante[i] = c;
 				i++;
-			}else
-				return 3;
+			}/*else
+				return 3;*/
 		    c = fgetc(file);
 		}
 		palestrante[i] = 0;
@@ -79,8 +79,8 @@ int PalestraManager_Read(char* filename){
 			if(Check_char(c, filename)){
 				tema[i] = c;
 				i++;
-			}else
-				return 4;
+			}/*else
+				return 4;*/
 			c = fgetc(file);
 		}
 		tema[i] = 0;

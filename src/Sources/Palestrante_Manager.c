@@ -41,8 +41,8 @@ int PalestranteManager_Read(char* filename){
 			if(c != ' ' && Check_char(c, filename)){
 			    nome[i] = c;
 			    i++;
-			}else if (c != ' ' && !Check_char(c, filename))
-				return 2;
+			}/*else if (c != ' ' && !Check_char(c, filename))
+				return 2;*/
 			c = fgetc(file);
 		}
 		nome[i] = 0;
@@ -64,8 +64,8 @@ int PalestranteManager_Read(char* filename){
         			if(c != ' ' && c != ' ' && Check_char(c, filename)){
         			    d_sem[i] = c;
         			    i++;
-        			}else if (c != ' ' && !Check_char(c, filename))
-        				return 3;
+        			}/*else if (c != ' ' && !Check_char(c, filename))
+        				return 3;*/
         			c = fgetc(file);
         		}
         		d_sem[i] = 0;
@@ -100,8 +100,8 @@ int PalestranteManager_Read(char* filename){
         			if(c != ' ' && Check_Date(c, filename)){
         			    data[i] = c;
         			    i++;
-        			}else if(c != ' ' && !Check_Date(c, filename))
-        				return 4;
+        			}/*else if(c != ' ' && !Check_Date(c, filename))
+        				return 4;*/
         			c = fgetc(file);
         		}
         		data[i] = 0;
@@ -112,9 +112,9 @@ int PalestranteManager_Read(char* filename){
         			if(Check_Time(c, filename)){
         			    hinicio[i] = c;
         			    i++;
-        			}else if(!Check_Time(c, filename)){
-        				return 5;
-        			}
+        			}/*else if(!Check_Time(c, filename))
+        				return 5;*/
+
         			c = fgetc(file);
 
         		}
@@ -126,8 +126,8 @@ int PalestranteManager_Read(char* filename){
         			if(Check_Date(c, filename) || c ==';' || c == '.'){
         			    hfim[i] = c;
         			    i++;
-        			}else if(!Check_Date(c, filename) && ((c != ';' ) || (c != '.')))
-		        		return 6;
+        			}/*else if(!Check_Date(c, filename) && ((c != ';' ) || (c != '.')))
+		        		return 6;*/
         		}while(c != ';' && c != '.');
 
         		hfim[i] = 0;
