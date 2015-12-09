@@ -1,9 +1,0 @@
-
-30/10	1h	Codificar mód	Palesrante.c
-30/10	1h	Codificar mód	Nodo_Palestrante.c
-30/10	1h	Codificar mód	Lista_Palestrante.c
-30/10	1h	Codificar mód	Palestrante_manager.c
-31/10	2h	Revisar Cód	Palesrante.c
-31/10	2h	Revisar Cód	Nodo_Palestrante.c
-31/10	2h	Revisar Cód	Lista_Palestrante.c
-31/10	2h	Revisar Cód	Palestrante_manager.c
