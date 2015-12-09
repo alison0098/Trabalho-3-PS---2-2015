@@ -1,7 +1,0 @@
-29/10/2015|4|Estudar|Estudar a implementacao do modulo novo|
-30/10/2015|4|Projetar|Projetar a implementacao dos modulos|
-30/10/2015|5|Codificar modulos|
-31/10/2015|5|Codificar modulos|
-31/10/2015|3|Revisar codigo dos modulos|
-01/11/2015|10|Corrigir problemas encontrados|
-02/11/2015|3|Corrigir problemas encontrados|
