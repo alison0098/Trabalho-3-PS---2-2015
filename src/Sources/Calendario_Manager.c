@@ -106,7 +106,6 @@ void Calendario_Manager_Print(){
 
 	Tree_Fix_Vector(arvore);
 
-	printf("%d", atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[0]))[2]));
 	fprintf(arquivo_bom, "Calendario de Palestras (%d/%d - %d/%d)\n",
 			atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[0]))[2]),
 			atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[0]))[6]),
@@ -154,7 +153,7 @@ void Calendario_Manager_Search_By_Day(int dia){
         	check = 1;
         	printf("Palestra: %s\n", Palestra_Get_Nome(Calendario_Get_Palestra(vetor_acertado[i])));
         	printf("Palestrante: %s\n", Palestra_Get_Nome_Palestrante(Calendario_Get_Palestra(vetor_acertado[i])));
-        	printf("Local: %s - %02d:%02d\n", Palestra_Get_Local(Calendario_Get_Palestra(vetor_acertado[i])), Disponibilidade_Get_Hora(Calendario_Get_Disponibilidade(vetor_acertado[i])),
+        	printf("Local: %s - %02d:%02d\n\n", Palestra_Get_Local(Calendario_Get_Palestra(vetor_acertado[i])), Disponibilidade_Get_Hora(Calendario_Get_Disponibilidade(vetor_acertado[i])),
         			Disponibilidade_Get_Minuto(Calendario_Get_Disponibilidade(vetor_acertado[i])));
         }
 	}
@@ -173,7 +172,7 @@ void Calendario_Manager_Search_By_Month(int mes){
 	       	check = 1;
 	       	printf("Palestra: %s\n", Palestra_Get_Nome(Calendario_Get_Palestra(vetor_acertado[i])));
 	       	printf("Palestrante: %s\n", Palestra_Get_Nome_Palestrante(Calendario_Get_Palestra(vetor_acertado[i])));
-	       	printf("Local: %s - %02d:%02d\n", Palestra_Get_Local(Calendario_Get_Palestra(vetor_acertado[i])), Disponibilidade_Get_Hora(Calendario_Get_Disponibilidade(vetor_acertado[i])),
+	       	printf("Local: %s - %02d:%02d\n\n", Palestra_Get_Local(Calendario_Get_Palestra(vetor_acertado[i])), Disponibilidade_Get_Hora(Calendario_Get_Disponibilidade(vetor_acertado[i])),
 	       			Disponibilidade_Get_Minuto(Calendario_Get_Disponibilidade(vetor_acertado[i])));
 	       }
 	}
@@ -192,7 +191,7 @@ void Calendario_Manager_Search_By_Year(int ano){
 	       	check = 1;
 	       	printf("Palestra: %s\n", Palestra_Get_Nome(Calendario_Get_Palestra(vetor_acertado[i])));
 	       	printf("Palestrante: %s\n", Palestra_Get_Nome_Palestrante(Calendario_Get_Palestra(vetor_acertado[i])));
-	       	printf("Local: %s - %02d:%02d\n", Palestra_Get_Local(Calendario_Get_Palestra(vetor_acertado[i])), Disponibilidade_Get_Hora(Calendario_Get_Disponibilidade(vetor_acertado[i])),
+	       	printf("Local: %s - %02d:%02d\n\n", Palestra_Get_Local(Calendario_Get_Palestra(vetor_acertado[i])), Disponibilidade_Get_Hora(Calendario_Get_Disponibilidade(vetor_acertado[i])),
 	       			Disponibilidade_Get_Minuto(Calendario_Get_Disponibilidade(vetor_acertado[i])));
 	    }
 	}

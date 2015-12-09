@@ -8,13 +8,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "../Headers/Local_Manager.h"
+#include "../Headers/Checker.h"
 
 void LocalManager_Initialize(){
 	if(filaLocal == NULL)
 	    filaLocal = FilaLocal_New();
 }
 
-void LocalManager_Read(char* filename){
+int LocalManager_Read(char* filename){
 	char nome[30];
 	char endereco[50];
 	char data[13];
@@ -24,8 +25,10 @@ void LocalManager_Read(char* filename){
 	int i, hora, minuto, horafim, minutofim, diaS;
 
 	FILE *file;
-
-	file = fopen(filename, "r");
+	if(Check_File(filename))
+	    file = fopen(filename, "r");
+	else
+		return 1;
 
 	LocalManager_Initialize();
 
@@ -36,10 +39,12 @@ void LocalManager_Read(char* filename){
 		c = fgetc(file);
 		i = 0;
 		while(c != '.'){
-			if(c != ' '){
+			if(c != ' ' && Check_char(c, filename)){
 			    nome[i] = c;
 			    i++;
-			}
+			}else if (c != ' ' && !Check_char(c, filename))
+				return 2;
+
 			c = fgetc(file);
 		}
 		nome[i] = 0;
@@ -50,12 +55,13 @@ void LocalManager_Read(char* filename){
 		i = 0;
 		c = fgetc(file);
 		while(c != '.'){
-			if(c != ' '){
+			if(c != ' ' && Check_char(c, filename)){
 			    endereco[i] = c;
 			    i++;
-			}
-			c = fgetc(file);
+			}else if (c != ' ' && !Check_char(c, filename))
+				return 3;
 
+			c = fgetc(file);
 		}
 		endereco[i] = 0;
 
@@ -73,12 +79,12 @@ void LocalManager_Read(char* filename){
         		i = 0;
         		c = fgetc(file);
         		while(c != ','){
-        			if(c != ' '){
+        			if(c != ' ' && Check_char(c, filename)){
         			    d_sem[i] = c;
         			    i++;
-        			}
+        			}else if (c != ' ' && !Check_char(c, filename))
+        				return 4;
         			c = fgetc(file);
-
         		}
         		d_sem[i] = 0;
         		switch(d_sem[2]){
@@ -107,28 +113,37 @@ void LocalManager_Read(char* filename){
         		i = 0;
         		c = fgetc(file);
         		while(c != ','){
-        			if(c != ' '){
+        			if(c != ' ' && Check_Date(c, filename)){
         			    data[i] = c;
         			    i++;
-        			}
+        			}else if (c != ' ' && !Check_char(c, filename))
+        				return 5;
+
         			c = fgetc(file);
         		}
         		data[i] = 0;
-
         		i = 0;
         		c = fgetc(file);
         		while(c != '-'){
-        			hinicio[i] = c;
+        			if(Check_Time(c, filename)){
+        			    hinicio[i] = c;
+						i++;
+					}
+        			else if(!Check_Time(c, filename))
+        				return 6;
         			c = fgetc(file);
-        			i++;
+        			
         		}
         		hinicio[i] = 0;
 
         		i = 0;
         		do{
         			c = fgetc(file);
-        			hfim[i] = c;
-        			i++;
+        			if(Check_Date(c, filename) || c == ';' || c == '.'){
+        			    hfim[i] = c;
+        			    i++;
+        			}else if(!Check_Date(c, filename) && (c != ';' || c != '.'))
+        				return 7;
         		}while(c != ';' && c != '.');
 
         		hfim[i] = 0;
@@ -143,6 +158,7 @@ void LocalManager_Read(char* filename){
         c = fgetc(file);
 	}
 	fclose(file);
+	return 0;
 }
 
 int LocalManager_PopFila(){

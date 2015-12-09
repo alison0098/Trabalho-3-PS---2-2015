@@ -14,7 +14,7 @@ static FilaPalestrante* filaPalestrante;
 /**
  * Le o arquivo e arruma a fila.
  */
-void PalestranteManager_Read(char* filename);
+int PalestranteManager_Read(char* filename);
 /**
  * Destroi a fila.
  */

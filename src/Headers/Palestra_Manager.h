@@ -18,7 +18,7 @@ static FilaPalestra* filaPalestra;
  *
  * @param filename    nome do arquivo a ser lido.
  */
-void PalestraManager_Read(char* filename);
+int PalestraManager_Read(char* filename);
 /**
  * Destroi a fila de palestras.
  *

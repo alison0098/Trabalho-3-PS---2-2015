@@ -41,11 +41,11 @@ FilaPalestrante* FilaPalestrante_Pop(FilaPalestrante* fp){
 	NodePalestrante* aux, *temp;
 
 	if(fp == NULL)
-		return NULL;
+		return (FilaPalestrante*)NULL;
 
 	if(FilaPalestrante_Is_Empty(fp)){
 		free(fp);
-		return NULL;
+		return (FilaPalestrante*)NULL;
 	}
 
 	aux = fp->first;
@@ -53,7 +53,6 @@ FilaPalestrante* FilaPalestrante_Pop(FilaPalestrante* fp){
 	while(aux != NULL){
 		free(Palestrante_Get_Disp(NodePalestrante_Get(aux)));
 		temp = NodePalestrante_Get_Prox(aux);
-		free(NodePalestrante_Get(aux));
 		free(aux);
 		aux = temp;
 	}
@@ -124,7 +123,7 @@ void FilaPalestrante_Print(FilaPalestrante* f){
 	int i;
 
 	if(f == NULL){
-			printf("Fila nao inicializada");
+			printf("Fila nao inicializada\n\n");
 			return;
 	}
 	if(FilaPalestrante_Is_Empty(f)){
