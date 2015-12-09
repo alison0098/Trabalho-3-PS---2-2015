@@ -42,8 +42,8 @@ int LocalManager_Read(char* filename){
 			if(c != ' ' && Check_char(c, filename)){
 			    nome[i] = c;
 			    i++;
-			}else if (c != ' ' && !Check_char(c, filename))
-				return 2;
+			}/*else if (c != ' ' && !Check_char(c, filename))
+				return 2;*/
 
 			c = fgetc(file);
 		}
@@ -58,9 +58,9 @@ int LocalManager_Read(char* filename){
 			if(c != ' ' && Check_char(c, filename)){
 			    endereco[i] = c;
 			    i++;
-			}else if (c != ' ' && !Check_char(c, filename))
+			}/*else if (c != ' ' && !Check_char(c, filename))
 				return 3;
-
+*/
 			c = fgetc(file);
 		}
 		endereco[i] = 0;
@@ -82,8 +82,8 @@ int LocalManager_Read(char* filename){
         			if(c != ' ' && Check_char(c, filename)){
         			    d_sem[i] = c;
         			    i++;
-        			}else if (c != ' ' && !Check_char(c, filename))
-        				return 4;
+        			}/*else if (c != ' ' && !Check_char(c, filename))
+        				return 4;*/
         			c = fgetc(file);
         		}
         		d_sem[i] = 0;
@@ -116,9 +116,9 @@ int LocalManager_Read(char* filename){
         			if(c != ' ' && Check_Date(c, filename)){
         			    data[i] = c;
         			    i++;
-        			}else if (c != ' ' && !Check_char(c, filename))
+        			}/*else if (c != ' ' && !Check_char(c, filename))
         				return 5;
-
+*/
         			c = fgetc(file);
         		}
         		data[i] = 0;
@@ -129,8 +129,8 @@ int LocalManager_Read(char* filename){
         			    hinicio[i] = c;
 						i++;
 					}
-        			else if(!Check_Time(c, filename))
-        				return 6;
+        			/*else if(!Check_Time(c, filename))
+        				return 6;*/
         			c = fgetc(file);
         			
         		}
@@ -142,8 +142,8 @@ int LocalManager_Read(char* filename){
         			if(Check_Date(c, filename) || c == ';' || c == '.'){
         			    hfim[i] = c;
         			    i++;
-        			}else if(!Check_Date(c, filename) && (c != ';' || c != '.'))
-        				return 7;
+        			}/*else if(!Check_Date(c, filename) && (c != ';' || c != '.'))
+        				return 7;*/
         		}while(c != ';' && c != '.');
 
         		hfim[i] = 0;

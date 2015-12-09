@@ -14,7 +14,7 @@ int Check_char(char c, char* filename){
 	char file[100] = "Log_";
 	FILE *arq;
 
-	if((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 33 && c <= 63) || (c == ' '))
+	if((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 45 && c <= 63) || (c == ' '))
 		return 1;
 
 	strcat(file, filename);
