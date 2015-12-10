@@ -1,9 +1,10 @@
-Calendario de Palestras (9/15 - 9/15)
+Calendario de Palestras (9/2015 - 9/2015)
+Mes 9//
 Dia 1
- TemaPalestra1(Palestrante1):  8: 0 -  9:30.
+TemaPalestra1(Palestrante1):  8: 0 -  9:30.
 Local: AnfiteatroA
 Endereco: CIC/EST-UnB
 Dia 3
- TemaPalestra2(Palestrante2): 14: 0 - 15: 0.
+TemaPalestra2(Palestrante2): 14: 0 - 15: 0.
 Local: Sala01
 Endereco: PAT0987
