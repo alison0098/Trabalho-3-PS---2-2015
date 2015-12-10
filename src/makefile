@@ -1,7 +1,7 @@
 make all: prog
 
-prog: main.o Palestra.o Nodo_Palestra.o Fila_Palestra.o Palestra_Manager.o Local.o Nodo_Local.o Fila_Local.o Local_Manager.o Palestrante.o Nodo_Palestrante.o Fila_Palestrante.o Palestrante_Manager.o Disponibilidade.o Calendario.o Calendario_Manager.o Organizer.o
-	gcc main.o Palestra.o Nodo_Palestra.o Fila_Palestra.o Palestra_Manager.o Local.o Nodo_Local.o Fila_Local.o Local_Manager.o Palestrante.o Nodo_Palestrante.o Fila_Palestrante.o Palestrante_Manager.o Disponibilidade.o Calendario.o Calendario_Manager.o Organizer.o -o prog
+prog: main.o Palestra.o Nodo_Palestra.o Fila_Palestra.o Palestra_Manager.o Local.o Nodo_Local.o Fila_Local.o Local_Manager.o Palestrante.o Nodo_Palestrante.o Fila_Palestrante.o Palestrante_Manager.o Disponibilidade.o Calendario.o Calendario_Manager.o Organizer.o Checker.o
+	gcc main.o Palestra.o Nodo_Palestra.o Fila_Palestra.o Palestra_Manager.o Local.o Nodo_Local.o Fila_Local.o Local_Manager.o Palestrante.o Nodo_Palestrante.o Fila_Palestrante.o Palestrante_Manager.o Disponibilidade.o Calendario.o Calendario_Manager.o Organizer.o Checker.o -o prog
 	rm *.o
 
 main.o: Sources/main.c
@@ -54,6 +54,9 @@ Calendario_Manager.o: Sources/Calendario_Manager.c
 
 Organizer.o: Sources/Organizer.c
 	gcc -c Sources/Organizer.c
+	
+Checker.o: Sources/Checker.c
+	gcc -c Sources/Checker.c
 
 clean:
 	rm prog

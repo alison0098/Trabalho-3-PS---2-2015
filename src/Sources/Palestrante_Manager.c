@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "../Headers/Palestrante_Manager.h"
+#include "../Headers/Checker.h"
 
 void PalestranteManager_Initialize(){
 	if(filaPalestrante == NULL)
@@ -143,6 +144,7 @@ int PalestranteManager_Read(char* filename){
         c = fgetc(file);
 	}
 	fclose(file);
+	return 0;
 }
 
 int PalestranteManager_PopFila(){
