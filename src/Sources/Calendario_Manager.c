@@ -136,7 +136,7 @@ void Calendario_Manager_Print(){
 	fclose(arquivo_bom);
 
 	Tree_Del(arvore);
-	free(arvore);
+	
 }
 
 void Calendario_Manager_Delete(){
