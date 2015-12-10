@@ -90,7 +90,7 @@ void Calendario_Manager_Add(Calendario* cal){
 
 void Calendario_Manager_Print(){
 	Tree* arvore;
-	int i, dia, check = 0, mes, checkm = 0, ano = 0, mesf, anof;
+	int i, dia, check = 0, mes, checkm = 0, ano = 0;
 	Disponibilidade* disp;
 	Palestra* p;
 	Local* l;
@@ -106,11 +106,11 @@ void Calendario_Manager_Print(){
 
 	Tree_Fix_Vector(arvore);
 
-	mes = atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[0]))[3]);
-	ano = atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[0]))[6]);
-	mesf = atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[Calendario_Vector_Size - 1]))[3]);
-	anof = atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[Calendario_Vector_Size - 1]))[6]);
-	fprintf(arquivo_bom, "Calendario de Palestras (%d/%d - %d/%d)\n", mes, ano, mesf, anof);
+	fprintf(arquivo_bom, "Calendario de Palestras (%d/%d - %d/%d)\n",
+			atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[0]))[2]),
+			atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[0]))[6]),
+			atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[Calendario_Vector_Size - 1]))[2]),
+		    atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[Calendario_Vector_Size - 1]))[6]));
 
 	for(i = 0; i < Calendario_Vector_Size; i++){
 	    	mes = atoi(&Disponibilidade_Get_Data(Calendario_Get_Disponibilidade(vetor_acertado[i]))[3]);
@@ -136,6 +136,7 @@ void Calendario_Manager_Print(){
 	fclose(arquivo_bom);
 
 	Tree_Del(arvore);
+	free(arvore);
 }
 
 void Calendario_Manager_Delete(){
