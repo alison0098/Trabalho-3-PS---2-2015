@@ -51,8 +51,8 @@ int main(){
 					}//switch
 				}//while
 			}//if palestrante
-			PalestranteManager_PopFila();
-		    Calendario_Manager_Delete();
+		  Calendario_Manager_Delete();
+		 PalestranteManager_PopFila();
 		}//if local
 		LocalManager_PopFila();
     }//if palestra
