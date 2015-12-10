@@ -1,0 +1,159 @@
+Splint 3.1.2 --- 03 May 2009
+
+Sources/Calendario.c: (in function Calendario_Get_Local)
+Sources/Calendario.c:19:21: Storage *c reachable from parameter contains 1
+                               undefined field: local
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+Sources/Calendario.c: (in function Calendario_Get_Palestra)
+Sources/Calendario.c:23:21: Storage *c reachable from parameter contains 1
+                               undefined field: palestra
+Sources/Calendario.c: (in function Calendario_Get_Disponibilidade)
+Sources/Calendario.c:27:17: Storage *c reachable from parameter contains 1
+                               undefined field: disp
+Sources/Calendario.c: (in function Calendario_Get_Palestrante)
+Sources/Calendario.c:30:24: Storage *c reachable from parameter contains 1
+                               undefined field: palestrante
+Sources/Calendario_Manager.c: (in function Calendario_Manager_Print)
+Sources/Calendario_Manager.c:124:8: No argument corresponding to fprintf format
+                                       code 3 (%d): "Mes %d//%d\n"
+  Types are incompatible. (Use -type to inhibit warning)
+   Sources/Calendario_Manager.c:124:39: Corresponding format code
+Sources/Calendario_Manager.c:93:6: Variable size declared but not used
+  A variable is declared but never used. Use /*@unused@*/ in front of
+  declaration to suppress message. (Use -varuse to inhibit warning)
+Sources/Calendario_Manager.c:95:7: Variable data declared but not used
+Sources/Disponibilidade.c:19:3: Datatype Disponibilidade defined more than once
+  A function or variable is redefined. One of the declarations should use
+  extern. (Use -redef to inhibit warning)
+   Headers/Disponibilidade.h:11:32: Previous definition of Disponibilidade
+Sources/Disponibilidade.c: (in function Disp_Comp)
+Sources/Disponibilidade.c:23:2: Buffer overflow possible with sprintf. 
+                                   Recommend using snprintf instead: sprintf
+  Use of function that may lead to buffer overflow. (Use -bufferoverflowhigh to
+  inhibit warning)
+Sources/Disponibilidade.c:24:2: Buffer overflow possible with sprintf. 
+                                   Recommend using snprintf instead: sprintf
+Sources/Disponibilidade.c: (in function Disponibilidade_Get_Data)
+Sources/Disponibilidade.c:29:20: Storage *disp reachable from parameter
+                                    contains 1 undefined field: data
+Sources/Disponibilidade.c: (in function Disponibilidade_Get_Dia_Semana)
+Sources/Disponibilidade.c:33:18: Storage *disp reachable from parameter
+                                    contains 1 undefined field: ds
+Sources/Fila_Local.c: (in function FilaLocal_Get)
+Sources/Fila_Local.c:82:13: Storage *fp reachable from parameter contains 1
+                               undefined field: first
+Sources/Fila_Local.c: (in function FilaLocal_Get_With_Disp)
+Sources/Fila_Local.c:106:14: Storage *fp reachable from parameter contains 1
+                                undefined field: first
+Sources/Fila_Local.c: (in function FilaLocal_Get_First)
+Sources/Fila_Local.c:112:18: Storage *f reachable from parameter contains 1
+                                undefined field: first
+Sources/Fila_Local.c: (in function FilaLocal_Get_Last)
+Sources/Fila_Local.c:116:17: Storage *f reachable from parameter contains 1
+                                undefined field: last
+Sources/Fila_Palestra.c:17:3: Datatype FilaPalestra defined more than once
+   Headers/Fila_Palestra.h:6:29: Previous definition of FilaPalestra
+Sources/Fila_Palestra.c: (in function FilaPalestra_Get)
+Sources/Fila_Palestra.c:86:13: Storage *fp reachable from parameter contains 1
+                                  undefined field: first
+Sources/Fila_Palestra.c: (in function FilaPalestra_Get_With_Palestrante)
+Sources/Fila_Palestra.c:107:13: Storage *fp reachable from parameter contains 1
+                                   undefined field: first
+Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get)
+Sources/Fila_Palestrante.c:83:13: Storage *fp reachable from parameter contains
+                                     1 undefined field: first
+Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get_With_Disp)
+Sources/Fila_Palestrante.c:107:14: Storage *fp reachable from parameter
+                                      contains 1 undefined field: first
+Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get_First)
+Sources/Fila_Palestrante.c:113:18: Storage *f reachable from parameter contains
+                                      1 undefined field: first
+Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get_Last)
+Sources/Fila_Palestrante.c:117:17: Storage *f reachable from parameter contains
+                                      1 undefined field: last
+Sources/Local.c:17:2: Datatype Local defined more than once
+   Headers/Local.h:12:22: Previous definition of Local
+Sources/Local.c: (in function Local_New)
+Sources/Local.c:29:9: Returned storage *aux contains 1 undefined field: disp
+Sources/Local.c: (in function Local_Get_Nome)
+Sources/Local.c:47:17: Storage *l reachable from parameter contains 1 undefined
+                          field: nome
+Sources/Local.c: (in function Local_Get_Endereco)
+Sources/Local.c:51:21: Storage *l reachable from parameter contains 1 undefined
+                          field: endereco
+Sources/Local.c: (in function Local_Get_Disp)
+Sources/Local.c:59:17: Storage *l reachable from parameter contains 1 undefined
+                          field: disp
+Headers/Palestra_Manager.h:14:22: File static variable filaPalestra declared
+                                     but not used
+Headers/Palestrante_Manager.h:13:25: File static variable filaPalestrante
+                                        declared but not used
+Headers/Local_Manager.h:13:19: File static variable filaLocal declared but not
+                                  used
+Headers/Calendario_Manager.h:13:21: File static variable calendario declared
+                                       but not used
+Headers/Calendario_Manager.h:14:12: File static variable Calendario_Vector_Size
+                                       declared but not used
+Sources/Nodo_Local.c:14:2: Datatype NodeLocal defined more than once
+   Headers/Nodo_Local.h:13:26: Previous definition of NodeLocal
+Sources/Nodo_Local.c: (in function NodeLocal_Vector_Get)
+Sources/Nodo_Local.c:64:22: Storage *nv reachable from parameter contains 1
+                               undefined field: vetor
+Sources/Nodo_Local.c: (in function NodeLocal_Get_Prox)
+Sources/Nodo_Local.c:80:18: Storage *nl reachable from parameter contains 1
+                               undefined field: prox
+Sources/Nodo_Local.c: (in function NodeLocal_Get)
+Sources/Nodo_Local.c:86:23: Storage *nl reachable from parameter contains 1
+                               undefined field: local
+Sources/Nodo_Palestra.c:9:2: Datatype NodePalestra defined more than once
+   Headers/Nodo_Palestra.h:6:29: Previous definition of NodePalestra
+Sources/Nodo_Palestra.c: (in function NodePalestra_Get_Prox)
+Sources/Nodo_Palestra.c:25:18: Storage *np reachable from parameter contains 1
+                                  undefined field: prox
+Sources/Nodo_Palestra.c: (in function NodePalestra_Get)
+Sources/Nodo_Palestra.c:30:22: Storage *np reachable from parameter contains 1
+                                  undefined field: palestra
+Sources/Nodo_Palestrante.c: (in function NodePalestrante_Vector_Get)
+Sources/Nodo_Palestrante.c:63:22: Storage *nv reachable from parameter contains
+                                     1 undefined field: vetor
+Sources/Nodo_Palestrante.c: (in function NodePalestrante_Get_Prox)
+Sources/Nodo_Palestrante.c:79:18: Storage *np reachable from parameter contains
+                                     1 undefined field: prox
+Sources/Nodo_Palestrante.c: (in function NodePalestrante_Get)
+Sources/Nodo_Palestrante.c:84:25: Storage *np reachable from parameter contains
+                                     1 undefined field: Palestrante
+Sources/Organizer.c: (in function Organizer_Organize_Filas)
+Sources/Organizer.c:69:4: Buffer overflow possible with sprintf.  Recommend
+                             using snprintf instead: sprintf
+Sources/Palestra.c:17:3: Datatype Palestra defined more than once
+   Headers/Palestra.h:4:25: Previous definition of Palestra
+Sources/Palestra.c: (in function Palestra_Get_Nome)
+Sources/Palestra.c:20:17: Storage *p reachable from parameter contains 1
+                             undefined field: nome
+Sources/Palestra.c: (in function Palestra_Get_Nome_Palestrante)
+Sources/Palestra.c:28:24: Storage *p reachable from parameter contains 1
+                             undefined field: palestrante
+Sources/Palestra.c: (in function Palestra_Get_Local)
+Sources/Palestra.c:32:18: Storage *p reachable from parameter contains 1
+                             undefined field: local
+Sources/Palestra.c: (in function Palestra_Get_Tema)
+Sources/Palestra.c:36:17: Storage *p reachable from parameter contains 1
+                             undefined field: tema
+Sources/Palestra_Manager.c: (in function PalestraManager_Read)
+Sources/Palestra_Manager.c:97:3: Return value (type char *) ignored:
+                                    fgets(dur, 25, file)
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalother to inhibit warning)
+Sources/Palestrante.c: (in function Palestrante_Get_Nome)
+Sources/Palestrante.c:18:17: Storage *p reachable from parameter contains 1
+                                undefined field: nome
+Sources/Palestrante.c: (in function Palestrante_Get_Disp)
+Sources/Palestrante.c:22:17: Storage *p reachable from parameter contains 1
+                                undefined field: disp
+Sources/Palestrante.c: (in function Palestrante_New)
+Sources/Palestrante.c:34:9: Returned storage *aux contains 1 undefined field:
+                               disp
+
+Finished checking --- 53 code warnings
