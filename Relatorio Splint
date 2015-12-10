@@ -53,16 +53,16 @@ Sources/Fila_Palestra.c: (in function FilaPalestra_Get_With_Palestrante)
 Sources/Fila_Palestra.c:107:13: Storage *fp reachable from parameter contains 1
                                    undefined field: first
 Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get)
-Sources/Fila_Palestrante.c:84:13: Storage *fp reachable from parameter contains
+Sources/Fila_Palestrante.c:83:13: Storage *fp reachable from parameter contains
                                      1 undefined field: first
 Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get_With_Disp)
-Sources/Fila_Palestrante.c:108:14: Storage *fp reachable from parameter
+Sources/Fila_Palestrante.c:107:14: Storage *fp reachable from parameter
                                       contains 1 undefined field: first
 Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get_First)
-Sources/Fila_Palestrante.c:114:18: Storage *f reachable from parameter contains
+Sources/Fila_Palestrante.c:113:18: Storage *f reachable from parameter contains
                                       1 undefined field: first
 Sources/Fila_Palestrante.c: (in function FilaPalestrante_Get_Last)
-Sources/Fila_Palestrante.c:118:17: Storage *f reachable from parameter contains
+Sources/Fila_Palestrante.c:117:17: Storage *f reachable from parameter contains
                                       1 undefined field: last
 Sources/Local.c:17:2: Datatype Local defined more than once
    Headers/Local.h:12:22: Previous definition of Local
@@ -118,15 +118,15 @@ Sources/Nodo_Palestrante.c: (in function NodePalestrante_Get)
 Sources/Nodo_Palestrante.c:84:25: Storage *np reachable from parameter contains
                                      1 undefined field: Palestrante
 Sources/Organizer.c: (in function Organizer_Organize_Filas)
-Sources/Organizer.c:70:8: Buffer overflow possible with sprintf.  Recommend
+Sources/Organizer.c:71:8: Buffer overflow possible with sprintf.  Recommend
                              using snprintf instead: sprintf
-Sources/Organizer.c:72:5: Buffer overflow possible with sprintf.  Recommend
+Sources/Organizer.c:73:5: Buffer overflow possible with sprintf.  Recommend
                              using snprintf instead: sprintf
-Sources/Organizer.c:74:5: Buffer overflow possible with sprintf.  Recommend
+Sources/Organizer.c:75:5: Buffer overflow possible with sprintf.  Recommend
                              using snprintf instead: sprintf
-Sources/Organizer.c:76:5: Buffer overflow possible with sprintf.  Recommend
+Sources/Organizer.c:77:5: Buffer overflow possible with sprintf.  Recommend
                              using snprintf instead: sprintf
-Sources/Organizer.c:83:69: Passed storage data not completely defined (*data is
+Sources/Organizer.c:84:69: Passed storage data not completely defined (*data is
                               undefined): Disponibilidade_New (data, ...)
 Sources/Palestra.c:17:3: Datatype Palestra defined more than once
    Headers/Palestra.h:4:25: Previous definition of Palestra
@@ -143,8 +143,8 @@ Sources/Palestra.c: (in function Palestra_Get_Tema)
 Sources/Palestra.c:36:17: Storage *p reachable from parameter contains 1
                              undefined field: tema
 Sources/Palestra_Manager.c: (in function PalestraManager_Read)
-Sources/Palestra_Manager.c:97:3: Return value (type char *) ignored:
-                                    fgets(dur, 25, file)
+Sources/Palestra_Manager.c:105:3: Return value (type char *) ignored:
+                                     fgets(dur, 25, file)
   Result returned by function call is not used. If this is intended, can cast
   result to (void) to eliminate message. (Use -retvalother to inhibit warning)
 Sources/Palestrante.c: (in function Palestrante_Get_Nome)
