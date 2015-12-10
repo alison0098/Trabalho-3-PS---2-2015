@@ -5,7 +5,7 @@
  *      Author: Guilherme
  */
 
-#include "../Headers/Palestra_manager.h"
+#include "../Headers/Palestra_Manager.h"
 #include "../Headers/Fila_Palestra.h"
 #include "../Headers/Checker.h"
 #include <stdlib.h>
